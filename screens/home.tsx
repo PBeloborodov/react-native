@@ -13,7 +13,7 @@ import InfoPanel from './home/components/info-panel';
 import TabsPanel from './home/components/tabs-panel';
 import FilterPanel from './home/components/filter-panel';
 
-const Home = () => {
+function Home() {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
       <View style={styles.wrapImage}>
@@ -50,7 +50,7 @@ const Home = () => {
       <FilterPanel />
     </ScrollView>
   );
-};
+}
 const styles = StyleSheet.create({
   wrapImage: {
     width: '100%',
