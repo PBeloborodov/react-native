@@ -6,9 +6,7 @@ const InfoPanel = () => {
     <View style={styles.infoPanel}>
       <View style={styles.infoPanelItem}>
         <Image source={require('../../../src/assets/img/icon/cub.png')} />
-        <Text style={[styles.infoPanelText, styles.infoPanelCount]}>
-          1 000{' '}
-        </Text>
+        <Text style={[styles.infoPanelText, styles.infoPanelCount]}>1 000</Text>
         <Text style={styles.infoPanelText}>объектов</Text>
       </View>
       <View style={styles.infoPanelItem}>

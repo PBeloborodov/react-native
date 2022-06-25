@@ -12,16 +12,15 @@ import {style} from '../src/variables/style';
 import InfoPanel from './home/components/info-panel';
 import TabsPanel from './home/components/tabs-panel';
 import FilterPanel from './home/components/filter-panel';
+import MainImg from './components/main-img';
 
 function Home() {
   return (
     <ScrollView contentInsetAdjustmentBehavior="automatic">
-      <View style={styles.wrapImage}>
-        <Image
-          style={styles.img}
-          source={require('../src/assets/img/fon-home.jpg')}
-        />
-      </View>
+      <MainImg
+        url={require('../src/assets/img/fon-home.jpg')}
+        changeShow={false}
+      />
       <View style={styles.wrapDescription}>
         <Text style={styles.subTitleDedcription}>Путешествия</Text>
         <Text style={styles.titleDedcription}>
@@ -48,7 +47,6 @@ function Home() {
       <InfoPanel />
       <TabsPanel />
       <FilterPanel />
-      //{' '}
     </ScrollView>
   );
 }

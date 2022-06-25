@@ -1,16 +1,31 @@
-import React from 'react';
+import React, {FC} from 'react';
 import {
   TouchableOpacity,
   StyleSheet,
   Text,
   View,
   Pressable,
+  StyleProp,
+  ViewStyle,
 } from 'react-native';
 import {style} from '../../variables/style';
-const Button = ({onClick, title, customStyleBtn = {}, type = 'blue'}) => {
+
+type Props = {
+  onClick: () => void;
+  title: string;
+  customStyleBtn?: StyleProp<ViewStyle>;
+  type?: string;
+};
+
+const Button: FC<Props> = ({
+  onClick,
+  title,
+  customStyleBtn = {},
+  type = 'blue',
+}) => {
   return (
     <Pressable onPress={onClick}>
-      <View style={{...styles[`${type}Btn`], ...customStyleBtn}}>
+      <View style={[styles[`${type}Btn`], customStyleBtn]}>
         <Text style={styles[`${type}BtnText`]}>{title}</Text>
       </View>
     </Pressable>
