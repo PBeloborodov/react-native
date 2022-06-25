@@ -48,6 +48,7 @@ function Home() {
       <InfoPanel />
       <TabsPanel />
       <FilterPanel />
+      //{' '}
     </ScrollView>
   );
 }

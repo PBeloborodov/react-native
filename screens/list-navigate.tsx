@@ -5,6 +5,7 @@ const ListNavigate = ({navigation}) => {
   return (
     <View>
       <Button title="Home" onPress={() => navigation.navigate('Home')} />
+      <Button title="Menu" onPress={() => navigation.navigate('Menu')} />
     </View>
   );
 };

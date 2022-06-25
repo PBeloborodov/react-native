@@ -8,6 +8,7 @@ export const style = {
     gallery: '#EEEEEE',
     doveGray: '#707070',
     alabaster: '#F8F8F8',
+    dustyGray: '#969696',
   },
   defaultText: {
     fontSize: 14,
