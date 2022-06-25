@@ -14,5 +14,4 @@ module.exports = {
       },
     }),
   },
-  assetPlugins: ['react-native-svg'],
 };

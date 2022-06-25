@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "work.app"
-               BlueprintName = "work"
-               ReferencedContainer = "container:work.xcodeproj">
+               BuildableName = "travelApp.app"
+               BlueprintName = "travelApp"
+               ReferencedContainer = "container:travelApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "workTests.xctest"
-               BlueprintName = "workTests"
-               ReferencedContainer = "container:work.xcodeproj">
+               BuildableName = "travelAppTests.xctest"
+               BlueprintName = "travelAppTests"
+               ReferencedContainer = "container:travelApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "work.app"
-            BlueprintName = "work"
-            ReferencedContainer = "container:work.xcodeproj">
+            BuildableName = "travelApp.app"
+            BlueprintName = "travelApp"
+            ReferencedContainer = "container:travelApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "work.app"
-            BlueprintName = "work"
-            ReferencedContainer = "container:work.xcodeproj">
+            BuildableName = "travelApp.app"
+            BlueprintName = "travelApp"
+            ReferencedContainer = "container:travelApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
