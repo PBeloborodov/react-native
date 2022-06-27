@@ -43,4 +43,39 @@ export const defaultStyle = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
   },
+  MT_30: {
+    marginTop: 30,
+  },
+  filtterBlock: {
+    paddingLeft: 20,
+    paddingRight: 20,
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  filtterBlockBtn: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    paddingTop: 5,
+    paddingBottom: 5,
+    paddingLeft: 10,
+    paddingRight: 12,
+    borderRadius: 50,
+    marginRight: 12,
+    marginBottom: 12,
+    borderColor: style.color.blue,
+    borderWidth: 1,
+  },
+  filtterBlockAdd: {
+    width: '100%',
+  },
+  filtterBlockCross: {
+    marginLeft: 10,
+  },
+  filtterBlockBtnText: {
+    fontSize: 16,
+    color: style.color.blue,
+  },
 });

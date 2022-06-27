@@ -12,6 +12,7 @@ export const style = {
     doveGrayAdd: '#666666',
     silverChalice: '#B0B0B0',
     seashell: '#F1F1F1',
+    zumthor: '#E8F1FF',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
     },

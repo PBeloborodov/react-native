@@ -6,6 +6,7 @@ import Menu from './screens/menu';
 import Spheres from './screens/spheres';
 import ListNavigate from './screens/list-navigate';
 import ObjectDetail from './screens/object-detail';
+import Compilation from './screens/compilation';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,7 @@ function MyStack() {
       <Stack.Screen name="Menu" component={Menu} />
       <Stack.Screen name="Spheres" component={Spheres} />
       <Stack.Screen name="ObjectDetail" component={ObjectDetail} />
+      <Stack.Screen name="Compilation" component={Compilation} />
     </Stack.Navigator>
   );
 }

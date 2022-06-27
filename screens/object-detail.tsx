@@ -50,11 +50,11 @@ const OdjectDetail: FC<Props> = ({}) => {
         <ImgBlock url={require('../src/assets/img/exemple.jpg')} />
         <NonePhoto />
       </View>
-      <Text style={[defaultStyle.titleBlock, styles.MT_30]}>Видео</Text>
+      <Text style={[defaultStyle.titleBlock, defaultStyle.MT_30]}>Видео</Text>
       <View style={[styles.photoBlock]}>
         <NoneVideo />
       </View>
-      <Text style={[defaultStyle.titleBlock, styles.MT_30]}>
+      <Text style={[defaultStyle.titleBlock, defaultStyle.MT_30]}>
         Характеристики
       </Text>
       <View style={styles.characteristics}>
@@ -110,9 +110,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingLeft: 20,
     paddingRight: 20,
-  },
-  MT_30: {
-    marginTop: 30,
   },
   characteristics: {},
   characteristicsItem: {
