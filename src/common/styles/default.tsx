@@ -29,4 +29,18 @@ export const defaultStyle = StyleSheet.create({
     padding: 20,
     fontWeight: '700',
   },
+  input: {
+    width: 150,
+    height: 32,
+    backgroundColor: style.color.alabaster,
+    paddingLeft: 10,
+  },
+  select: {
+    width: 150,
+    height: 32,
+    backgroundColor: style.color.alabaster,
+    paddingLeft: 10,
+    display: 'flex',
+    justifyContent: 'center',
+  },
 });

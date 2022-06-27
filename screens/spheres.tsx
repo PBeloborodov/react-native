@@ -30,6 +30,7 @@ import IconMap from '../src/assets/img/icon/icon-map.svg';
 import PhotoColor from '../src/assets/img/icon/photo-color.svg';
 import VideoColor from '../src/assets/img/icon/video-color.svg';
 import AudioColor from '../src/assets/img/icon/audio-color.svg';
+import BtnsBlock from './components/btns-block';
 
 function Spheres() {
   return (
@@ -39,7 +40,7 @@ function Spheres() {
       <MainImg url={require('../src/assets/img/fon-home.jpg')} />
       <InfoBlock
         content="Элементы и&nbsp;функции платформы (развитие, ошибки и&nbsp;доработки)"
-        label="Родительская сфера"
+        label="Cфера"
         icon={<ChildSphere width={24} height={24} />}
       />
       <Text style={[defaultStyle.titlePage]}>Название сферы</Text>
@@ -136,20 +137,7 @@ function Spheres() {
         onPresParagraph={() => {}}
         activeElement={<CheckBox customCheck={() => {}} />}
       />
-      <View style={styles.wrapBtns}>
-        <Button
-          onClick={() => {}}
-          title={'Отмена'}
-          type="white"
-          customStyleBtn={styles.paragraphBtn}
-        />
-        <Button
-          onClick={() => {}}
-          title={'Сохранить'}
-          //   customStyleBtn={}
-          customStyleBtn={[styles.paragraphBtn, {marginLeft: 10}]}
-        />
-      </View>
+      <BtnsBlock />
     </ScrollView>
   );
 }
@@ -167,16 +155,6 @@ const styles = StyleSheet.create({
   },
   MT_30: {
     marginTop: 30,
-  },
-  wrapBtns: {
-    display: 'flex',
-    flexDirection: 'row',
-    padding: 20,
-    marginTop: 55,
-  },
-  paragraphBtn: {
-    width: 174,
-    height: 40,
   },
 });
 

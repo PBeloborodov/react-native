@@ -10,6 +10,8 @@ export const style = {
     alabaster: '#F8F8F8',
     dustyGray: '#969696',
     doveGrayAdd: '#666666',
+    silverChalice: '#B0B0B0',
+    seashell: '#F1F1F1',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
     },

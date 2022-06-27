@@ -7,6 +7,10 @@ const ListNavigate = ({navigation}) => {
       <Button title="Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Menu" onPress={() => navigation.navigate('Menu')} />
       <Button title="Spheres" onPress={() => navigation.navigate('Spheres')} />
+      <Button
+        title="ObjectDetail"
+        onPress={() => navigation.navigate('ObjectDetail')}
+      />
     </View>
   );
 };

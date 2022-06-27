@@ -27,7 +27,10 @@ const styles = StyleSheet.create({
     paddingRight: 20,
     paddingLeft: 20,
   },
-  label: {},
+  label: {
+    color: style.color.tundora,
+    marginBottom: 5,
+  },
   infoBg: {
     display: 'flex',
     flexDirection: 'row',
