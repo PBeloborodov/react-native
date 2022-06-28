@@ -6,7 +6,7 @@ import {
   ImageSourcePropType,
   Pressable,
 } from 'react-native';
-import {style} from '../../src/variables/style';
+import {style} from '../../src/common/styles/variables/style';
 import Cross from '../../src/assets/img/icon/cross.svg';
 
 type Props = {

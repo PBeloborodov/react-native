@@ -8,7 +8,7 @@ import {
   StyleProp,
   ViewStyle,
 } from 'react-native';
-import {style} from '../../variables/style';
+import {style} from '../styles/variables/style';
 
 type Props = {
   onClick: () => void;

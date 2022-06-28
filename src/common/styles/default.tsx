@@ -1,8 +1,8 @@
 import {StyleSheet} from 'react-native';
-import {style} from '../../variables/style';
+import {style} from './variables/style';
 
 export const defaultStyle = StyleSheet.create({
-  titlePage: {
+  inputName: {
     fontSize: 18,
     color: style.color.tundora,
     fontWeight: '700',
@@ -10,12 +10,14 @@ export const defaultStyle = StyleSheet.create({
     paddingBottom: 10,
     paddingLeft: 20,
     paddingRight: 20,
+    marginBottom: 20,
   },
-  subTitlePage: {
+  descriptionInput: {
     fontSize: 14,
     color: style.color.tundora,
     paddingLeft: 20,
     paddingRight: 20,
+    marginBottom: 20,
   },
   smallLine: {
     width: 28,

@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import {View, StyleSheet, Text, ViewStyle, StyleProp} from 'react-native';
-import {style} from '../../src/variables/style';
+import {style} from '../../src/common/styles/variables/style';
 
 type Props = {
   icon: any;

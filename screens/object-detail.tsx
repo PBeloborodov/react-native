@@ -16,7 +16,7 @@ import ImgBlock from './components/img-block';
 import NonePhoto from './components/none-photo';
 import NoneVideo from './components/none-video';
 import OnOffChtcked from './components/on-off-checked';
-import {style} from '../src/variables/style';
+import {style} from '../src/common/styles/variables/style';
 import RNPickerSelect from 'react-native-picker-select';
 import BtnsBlock from './components/btns-block';
 
@@ -39,10 +39,14 @@ const OdjectDetail: FC<Props> = ({}) => {
         label="Родительская сфера"
         icon={<IconSphere width={24} height={24} />}
       />
-      <Text style={[defaultStyle.titlePage]}>Название объекта</Text>
-      <Text style={[defaultStyle.subTitlePage, styles.nameBlock]}>
-        Описание объекта
-      </Text>
+      <TextInput
+        style={[defaultStyle.inputName]}
+        placeholder={'Название подборки'}
+      />
+      <TextInput
+        style={[defaultStyle.descriptionInput, styles.nameBlock]}
+        placeholder={'Описание подборки'}
+      />
       <View style={[defaultStyle.smallLine]} />
       <Text style={[defaultStyle.titleBlock]}>Фотографии</Text>
       <View style={[styles.photoBlock]}>

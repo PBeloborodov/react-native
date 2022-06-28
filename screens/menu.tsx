@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, ScrollView, StyleSheet, Pressable} from 'react-native';
-import {style} from '../src/variables/style';
+import {style} from '../src/common/styles/variables/style';
 import Cub from '../src/assets/img/icon/menu/cub.svg';
 import ChildSphere from '../src/assets/img/icon/menu/child-sphere.svg';
 import RelatedSphere from '../src/assets/img/icon/menu/related-sphere.svg';

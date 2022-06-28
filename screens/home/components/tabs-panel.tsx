@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text, Pressable} from 'react-native';
-import {style} from '../../../src/variables/style';
+import {style} from '../../../src/common/styles/variables/style';
 
 const TabsPanel = () => {
   return (

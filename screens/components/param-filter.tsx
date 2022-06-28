@@ -1,6 +1,6 @@
 import React, {FC, useState} from 'react';
 import {View, Pressable, StyleSheet, Text, Image} from 'react-native';
-import {style} from '../../src/variables/style';
+import {style} from '../../src/common/styles/variables/style';
 import CrossBlue from '../../src/assets/img/icon/cross-blue.svg';
 
 type Props = {

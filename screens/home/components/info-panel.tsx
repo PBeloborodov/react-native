@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
-import {style} from '../../../src/variables/style';
+import {style} from '../../../src/common/styles/variables/style';
 const InfoPanel = () => {
   return (
     <View style={styles.infoPanel}>

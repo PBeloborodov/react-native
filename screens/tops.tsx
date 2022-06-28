@@ -14,10 +14,12 @@ import PlusBlue from '../src/assets/img/icon/plus-blue.svg';
 import {defaultStyle} from './../src/common/styles/default';
 import ParamFilter from './components/param-filter';
 import BtnsBlock from './components/btns-block';
+import PostItem from './components/post-item';
+import {style} from '../src/common/styles/variables/style';
 
 type Props = {};
 
-const Compilation: FC<Props> = () => {
+const Tops: FC<Props> = () => {
   return (
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
@@ -30,16 +32,14 @@ const Compilation: FC<Props> = () => {
       />
       <TextInput
         style={[defaultStyle.inputName]}
-        placeholder={'Название подборки'}
+        placeholder={'Название топа'}
       />
       <TextInput
         style={[defaultStyle.descriptionInput, styles.nameBlock]}
-        placeholder={'Описание подборки'}
+        placeholder={'Описание топа'}
       />
       <View style={[defaultStyle.smallLine]} />
-      <Text style={[defaultStyle.titleBlock, defaultStyle.MT_30]}>
-        Критерии
-      </Text>
+      <Text style={[defaultStyle.titleBlock]}>Критерии</Text>
       <View style={[defaultStyle.filtterBlock]}>
         <ParamFilter content="надежность" square={false} />
         <ParamFilter content="экономичность" square={false} />
@@ -52,37 +52,14 @@ const Compilation: FC<Props> = () => {
           </View>
         </Pressable>
       </View>
-      <Text style={[defaultStyle.titleBlock]}>Фильтры</Text>
-      <View style={[defaultStyle.filtterBlock]}>
-        <ParamFilter content="Цена: от 1000" />
-        <ParamFilter content="Товары со скидкой" />
-        <View style={[defaultStyle.filtterBlockAdd]}>
-          <Pressable>
-            <View style={[defaultStyle.filtterBlockBtn, {borderRadius: 8}]}>
-              <Text style={[defaultStyle.filtterBlockBtnText]}>добавить</Text>
-              <View style={[defaultStyle.filtterBlockCross]}>
-                <PlusBlue />
-              </View>
-            </View>
-          </Pressable>
-        </View>
-      </View>
-      <Text style={[defaultStyle.titleBlock]}>По мнению</Text>
-      <View style={[defaultStyle.filtterBlock]}>
-        <ParamFilter
-          content="Максим Петров"
-          urlImg={require('../src/assets/img/user-photo.jpg')}
-        />
-        <View style={[defaultStyle.filtterBlockAdd]}>
-          <Pressable>
-            <View style={[defaultStyle.filtterBlockBtn, {borderRadius: 8}]}>
-              <Text style={[defaultStyle.filtterBlockBtnText]}>добавить</Text>
-              <View style={[defaultStyle.filtterBlockCross]}>
-                <PlusBlue />
-              </View>
-            </View>
-          </Pressable>
-        </View>
+      <View style={styles.listPost}>
+        <PostItem />
+        <Pressable>
+          <View style={styles.addPost}>
+            <PlusBlue width="24" height="24" />
+            <Text style={styles.addPostText}>Добавить объект</Text>
+          </View>
+        </Pressable>
       </View>
       <BtnsBlock />
     </ScrollView>
@@ -91,6 +68,26 @@ const Compilation: FC<Props> = () => {
 
 const styles = StyleSheet.create({
   nameBlock: {},
+  listPost: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  addPost: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 15,
+    borderWidth: 1,
+    marginRight: 20,
+    marginLeft: 20,
+    borderColor: style.color.blue,
+  },
+  addPostText: {
+    fontSize: 16,
+    color: style.color.blue,
+    marginLeft: 15,
+  },
 });
 
-export default Compilation;
+export default Tops;

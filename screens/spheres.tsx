@@ -8,7 +8,7 @@ import {
   Pressable,
 } from 'react-native';
 import Button from '../src/common/components/button';
-import {style} from '../src/variables/style';
+import {style} from '../src/common/styles/variables/style';
 import InfoPanel from './home/components/info-panel';
 import TabsPanel from './home/components/tabs-panel';
 import FilterPanel from './home/components/filter-panel';
