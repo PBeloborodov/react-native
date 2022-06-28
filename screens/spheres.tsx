@@ -6,6 +6,7 @@ import {
   Text,
   StyleSheet,
   Pressable,
+  TextInput,
 } from 'react-native';
 import Button from '../src/common/components/button';
 import {style} from '../src/common/styles/variables/style';
@@ -43,13 +44,17 @@ function Spheres() {
         label="Cфера"
         icon={<ChildSphere width={24} height={24} />}
       />
-      <Text style={[defaultStyle.titlePage]}>Название сферы</Text>
-      <Text style={[defaultStyle.subTitlePage, styles.nameBlock]}>
-        Описание сферы
-      </Text>
+      <TextInput
+        style={[defaultStyle.inputName]}
+        placeholder={'Название сферы'}
+      />
+      <TextInput
+        style={[defaultStyle.descriptionInput, styles.nameBlock]}
+        placeholder={'Описание сферы'}
+      />
       <View style={[defaultStyle.smallLine]} />
       <Text style={[defaultStyle.titleBlock]}>Тип сферы</Text>
-      <Text style={[defaultStyle.subTitlePage, styles.groupFilter]}>
+      <Text style={[defaultStyle.descriptionInput, styles.groupFilter]}>
         Доступность
       </Text>
       <ActiveParagraph
@@ -66,7 +71,11 @@ function Spheres() {
       />
 
       <Text
-        style={[defaultStyle.subTitlePage, styles.groupFilter, styles.MT_30]}>
+        style={[
+          defaultStyle.descriptionInput,
+          styles.groupFilter,
+          styles.MT_30,
+        ]}>
         Контент
       </Text>
       <ActiveParagraph
@@ -100,7 +109,11 @@ function Spheres() {
         activeElement={<CheckBox customCheck={() => {}} />}
       />
       <Text
-        style={[defaultStyle.subTitlePage, styles.groupFilter, styles.MT_30]}>
+        style={[
+          defaultStyle.descriptionInput,
+          styles.groupFilter,
+          styles.MT_30,
+        ]}>
         Настройки
       </Text>
       <ActiveParagraph
@@ -116,7 +129,11 @@ function Spheres() {
         activeElement={<CheckBox customCheck={() => {}} />}
       />
       <Text
-        style={[defaultStyle.subTitlePage, styles.groupFilter, styles.MT_30]}>
+        style={[
+          defaultStyle.descriptionInput,
+          styles.groupFilter,
+          styles.MT_30,
+        ]}>
         Медиа
       </Text>
       <ActiveParagraph

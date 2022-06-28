@@ -8,6 +8,7 @@ import ListNavigate from './screens/list-navigate';
 import ObjectDetail from './screens/object-detail';
 import Compilation from './screens/compilation';
 import Tops from './screens/tops';
+import ListPost from './screens/list-post';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +22,7 @@ function MyStack() {
       <Stack.Screen name="ObjectDetail" component={ObjectDetail} />
       <Stack.Screen name="Compilation" component={Compilation} />
       <Stack.Screen name="Tops" component={Tops} />
+      <Stack.Screen name="ListPost" component={ListPost} />
     </Stack.Navigator>
   );
 }

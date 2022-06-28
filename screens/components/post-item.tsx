@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 import {View, StyleSheet, Pressable, Text, Image} from 'react-native';
 import UpDownArrow from '../../src/assets/img/icon/up-down-arrow.svg';
 import ThreeDots from '../../src/assets/img/icon/three-dots.svg';
-import {defaultStyle} from '../../src/common/styles/default';
 import {style} from '../../src/common/styles/variables/style';
 
 type Props = {};

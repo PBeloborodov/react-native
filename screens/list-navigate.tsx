@@ -16,6 +16,10 @@ const ListNavigate = ({navigation}) => {
         onPress={() => navigation.navigate('Compilation')}
       />
       <Button title="Tops" onPress={() => navigation.navigate('Tops')} />
+      <Button
+        title="ListPost"
+        onPress={() => navigation.navigate('ListPost')}
+      />
     </View>
   );
 };
