@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     padding: 20,
-    marginTop: 55,
+    marginTop: 'auto',
   },
   btnsItem: {
     width: 174,

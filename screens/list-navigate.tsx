@@ -20,6 +20,18 @@ const ListNavigate = ({navigation}) => {
         title="ListPost"
         onPress={() => navigation.navigate('ListPost')}
       />
+      <Button
+        title="CreateSphere"
+        onPress={() => navigation.navigate('CreateSphere')}
+      />
+      <Button
+        title="CreateSphereWithoutStatus"
+        onPress={() => navigation.navigate('CreateSphereWithoutStatus')}
+      />
+      <Button
+        title="CreateParentProperty"
+        onPress={() => navigation.navigate('CreateParentProperty')}
+      />
     </View>
   );
 };

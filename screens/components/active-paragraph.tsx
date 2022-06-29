@@ -1,10 +1,12 @@
 import React, {FC, ReactNode} from 'react';
+import {useState} from 'react';
 import {View, StyleSheet, Image, Text, Pressable} from 'react-native';
 import {style} from '../../src/common/styles/variables/style';
 type Props = {
-  icon: ReactNode;
+  icon?: ReactNode;
   label: string;
-  activeElement: ReactNode;
+  activeElement?: ReactNode;
+  activeElementCustom?: (isChecked: boolean) => ReactNode;
   onPresParagraph: () => void;
 };
 
@@ -13,16 +15,30 @@ const ActiveParagraph: FC<Props> = ({
   label,
   activeElement,
   onPresParagraph,
+  activeElementCustom,
 }) => {
+  const [isChecked, setIsChecked] = useState<boolean>(false);
   return (
     <Pressable
       onPress={() => {
         onPresParagraph();
+        setIsChecked(!isChecked);
       }}
-      style={styles.wrapParagraph}>
-      <View style={styles.paragraphIcon}>{icon}</View>
-      <Text style={styles.paragraphLabel}>{label}</Text>
+      style={[
+        styles.wrapParagraph,
+        isChecked ? {backgroundColor: style.color.alabaster} : {},
+      ]}>
+      <View style={[styles.wrapcontent]}>
+        {icon && <View style={styles.paragraphIcon}>{icon}</View>}
+        <Text style={styles.paragraphLabel}>{label}</Text>
+      </View>
+
       <View style={styles.paragraphWrapCheck}>{activeElement}</View>
+      {activeElementCustom && (
+        <View style={styles.paragraphWrapCheck}>
+          {activeElementCustom(isChecked)}
+        </View>
+      )}
     </Pressable>
   );
 };
@@ -32,20 +48,30 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'space-between',
     paddingTop: 12,
     paddingBottom: 12,
-    paddingLeft: 30,
-    paddingRight: 30,
+    paddingLeft: 20,
+    paddingRight: 20,
     borderTopColor: style.color.gallery,
     borderBottomColor: style.color.gallery,
     borderTopWidth: 1,
     borderBottomWidth: 1,
   },
-  paragraphIcon: {},
+  paragraphIcon: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    width: 50,
+    paddingRight: 20,
+  },
+  wrapcontent: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   paragraphLabel: {
-    marginRight: 15,
-    marginLeft: 15,
-    fontSize: 14,
+    fontSize: 16,
   },
   paragraphWrapCheck: {
     position: 'absolute',

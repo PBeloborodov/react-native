@@ -9,6 +9,9 @@ import ObjectDetail from './screens/object-detail';
 import Compilation from './screens/compilation';
 import Tops from './screens/tops';
 import ListPost from './screens/list-post';
+import CreateSphere from './screens/create-sphere';
+import CreateSphereWithoutStatus from './screens/create-sphere-without-status';
+import CreateParentProperty from './screens/create-parent-property';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +26,15 @@ function MyStack() {
       <Stack.Screen name="Compilation" component={Compilation} />
       <Stack.Screen name="Tops" component={Tops} />
       <Stack.Screen name="ListPost" component={ListPost} />
+      <Stack.Screen name="CreateSphere" component={CreateSphere} />
+      <Stack.Screen
+        name="CreateSphereWithoutStatus"
+        component={CreateSphereWithoutStatus}
+      />
+      <Stack.Screen
+        name="CreateParentProperty"
+        component={CreateParentProperty}
+      />
     </Stack.Navigator>
   );
 }

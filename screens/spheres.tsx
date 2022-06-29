@@ -32,6 +32,7 @@ import PhotoColor from '../src/assets/img/icon/photo-color.svg';
 import VideoColor from '../src/assets/img/icon/video-color.svg';
 import AudioColor from '../src/assets/img/icon/audio-color.svg';
 import BtnsBlock from './components/btns-block';
+import CheckBoxCustom from './home/components/checkbox-custom';
 
 function Spheres() {
   return (
@@ -61,13 +62,13 @@ function Spheres() {
         icon={<Lock />}
         label={'Приватная'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<Public />}
         label={'Публичная'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
 
       <Text
@@ -82,31 +83,31 @@ function Spheres() {
         icon={<Cart />}
         label={'Товары'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<Services />}
         label={'Услуги'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<User />}
         label={'Люди'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<UserGroup />}
         label={'Социальная'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<Vacancy />}
         label={'Вакансии'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <Text
         style={[
@@ -120,13 +121,13 @@ function Spheres() {
         icon={<ClockTemp />}
         label={'Временная'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<IconMap />}
         label={'Карта'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <Text
         style={[
@@ -140,19 +141,19 @@ function Spheres() {
         icon={<PhotoColor />}
         label={'Фотографии'}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
       />
       <ActiveParagraph
         icon={<VideoColor />}
         label={'Видеозаписи'}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
       />
       <ActiveParagraph
         icon={<AudioColor />}
         label={'Аудиозаписи'}
+        activeElementCustom={checked => <CheckBoxCustom checked={checked} />}
         onPresParagraph={() => {}}
-        activeElement={<CheckBox customCheck={() => {}} />}
       />
       <BtnsBlock />
     </ScrollView>

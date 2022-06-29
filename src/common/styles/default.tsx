@@ -17,7 +17,7 @@ export const defaultStyle = StyleSheet.create({
     color: style.color.tundora,
     paddingLeft: 20,
     paddingRight: 20,
-    marginBottom: 20,
+    marginBottom: 10,
   },
   smallLine: {
     width: 28,
@@ -79,5 +79,26 @@ export const defaultStyle = StyleSheet.create({
   filtterBlockBtnText: {
     fontSize: 16,
     color: style.color.blue,
+  },
+  characteristics: {},
+  characteristicsItem: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingLeft: 20,
+    paddingRight: 20,
+    paddingTop: 18,
+    paddingBottom: 18,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderTopColor: style.color.gallery,
+    borderBottomColor: style.color.gallery,
+  },
+  characteristicsLabel: {
+    width: '47%',
+  },
+  characteristicsInput: {
+    width: '47%',
   },
 });

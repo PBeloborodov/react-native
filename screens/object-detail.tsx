@@ -62,24 +62,28 @@ const OdjectDetail: FC<Props> = ({}) => {
         Характеристики
       </Text>
       <View style={styles.characteristics}>
-        <View style={styles.characteristicsItem}>
-          <Text style={styles.characteristicsLabel}>Логическое значение</Text>
-          <View style={styles.characteristicsInput}>
+        <View style={defaultStyle.characteristicsItem}>
+          <Text style={defaultStyle.characteristicsLabel}>
+            Логическое значение
+          </Text>
+          <View style={defaultStyle.characteristicsInput}>
             <OnOffChtcked />
           </View>
         </View>
-        <View style={styles.characteristicsItem}>
-          <Text style={styles.characteristicsLabel}>Строковое значение</Text>
-          <View style={styles.characteristicsInput}>
+        <View style={defaultStyle.characteristicsItem}>
+          <Text style={defaultStyle.characteristicsLabel}>
+            Строковое значение
+          </Text>
+          <View style={defaultStyle.characteristicsInput}>
             <TextInput
               style={defaultStyle.input}
               placeholder={'Ведите значение'}
             />
           </View>
         </View>
-        <View style={styles.characteristicsItem}>
-          <Text style={styles.characteristicsLabel}>Список выбора</Text>
-          <View style={styles.characteristicsInput}>
+        <View style={defaultStyle.characteristicsItem}>
+          <Text style={defaultStyle.characteristicsLabel}>Список выбора</Text>
+          <View style={defaultStyle.characteristicsInput}>
             <RNPickerSelect
               onValueChange={value => console.log(value)}
               style={{viewContainer: defaultStyle.select}}
@@ -93,9 +97,9 @@ const OdjectDetail: FC<Props> = ({}) => {
             />
           </View>
         </View>
-        <View style={styles.characteristicsItem}>
-          <Text style={styles.characteristicsLabel}>Целое значение</Text>
-          <View style={styles.characteristicsInput}>
+        <View style={defaultStyle.characteristicsItem}>
+          <Text style={defaultStyle.characteristicsLabel}>Целое значение</Text>
+          <View style={defaultStyle.characteristicsInput}>
             <TextInput
               style={defaultStyle.input}
               placeholder={'Ведите значение'}
@@ -116,26 +120,6 @@ const styles = StyleSheet.create({
     paddingRight: 20,
   },
   characteristics: {},
-  characteristicsItem: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    paddingLeft: 20,
-    paddingRight: 20,
-    paddingTop: 18,
-    paddingBottom: 18,
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    borderTopColor: style.color.gallery,
-    borderBottomColor: style.color.gallery,
-  },
-  characteristicsLabel: {
-    width: '47%',
-  },
-  characteristicsInput: {
-    width: '47%',
-  },
 });
 
 export default OdjectDetail;

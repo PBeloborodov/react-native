@@ -11,8 +11,11 @@ export const style = {
     dustyGray: '#969696',
     doveGrayAdd: '#666666',
     silverChalice: '#B0B0B0',
+    mineShaft: '#222222',
     seashell: '#F1F1F1',
     zumthor: '#E8F1FF',
+    redOrange: '#FF2626',
+    alto: '#CECECE',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
     },
