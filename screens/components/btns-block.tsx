@@ -16,8 +16,7 @@ const BtnsBlock: FC<Props> = props => {
       <Button
         onClick={() => {}}
         title={'Сохранить'}
-        //   customStyleBtn={}
-        customStyleBtn={[styles.btnsItem, {marginLeft: 10}]}
+        customStyleBtn={[styles.btnsItem]}
       />
     </View>
   );
@@ -26,11 +25,12 @@ const styles = StyleSheet.create({
   wrapBtns: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
     padding: 20,
     marginTop: 'auto',
   },
   btnsItem: {
-    width: 174,
+    width: 164,
     height: 40,
   },
 });

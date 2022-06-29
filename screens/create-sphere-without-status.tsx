@@ -14,7 +14,7 @@ type Props = {};
 const CreateSphereWithoutStatus: FC<Props> = props => {
   const heightScreen = Dimensions.get('window').height - 100;
   return (
-    <ScrollView>
+    <ScrollView style={defaultStyle.fon}>
       <View style={[styles.container, {height: heightScreen}]}>
         <InfoBlock
           content="Элементы и&nbsp;функции платформы (развитие, ошибки и&nbsp;доработки)"

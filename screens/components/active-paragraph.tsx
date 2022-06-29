@@ -33,7 +33,10 @@ const ActiveParagraph: FC<Props> = ({
         <Text style={styles.paragraphLabel}>{label}</Text>
       </View>
 
-      <View style={styles.paragraphWrapCheck}>{activeElement}</View>
+      {activeElement && (
+        <View style={styles.paragraphWrapCheck}>{activeElement}</View>
+      )}
+
       {activeElementCustom && (
         <View style={styles.paragraphWrapCheck}>
           {activeElementCustom(isChecked)}
@@ -75,7 +78,7 @@ const styles = StyleSheet.create({
   },
   paragraphWrapCheck: {
     position: 'absolute',
-    right: 15,
+    right: 20,
   },
 });
 

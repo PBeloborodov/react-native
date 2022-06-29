@@ -32,18 +32,20 @@ export const defaultStyle = StyleSheet.create({
     fontWeight: '700',
   },
   input: {
-    width: 150,
+    width: '100%',
     height: 32,
     backgroundColor: style.color.alabaster,
     paddingLeft: 10,
+    borderRadius: 4,
   },
   select: {
-    width: 150,
+    width: '100%',
     height: 32,
     backgroundColor: style.color.alabaster,
     paddingLeft: 10,
     display: 'flex',
     justifyContent: 'center',
+    borderRadius: 4,
   },
   MT_30: {
     marginTop: 30,
@@ -96,9 +98,14 @@ export const defaultStyle = StyleSheet.create({
     borderBottomColor: style.color.gallery,
   },
   characteristicsLabel: {
-    width: '47%',
+    width: '55%',
+    color: style.color.mineShaft,
   },
   characteristicsInput: {
-    width: '47%',
+    width: '42%',
+  },
+  fon: {
+    backgroundColor: style.color.white,
+    paddingBottom: 40,
   },
 });

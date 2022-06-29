@@ -56,6 +56,9 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   rowPostText: {
+    // fontFamily: 'RobotoBlack',
+    fontWeight: '500',
+    color: style.color.black,
     flexShrink: 1,
     width: 200,
   },

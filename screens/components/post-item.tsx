@@ -67,10 +67,12 @@ const styles = StyleSheet.create({
     position: 'relative',
     width: '100%',
     height: 265,
+    borderRadius: 4,
   },
   postImg: {
     width: '100%',
     height: '100%',
+    borderRadius: 4,
   },
 });
 

@@ -13,10 +13,13 @@ import InfoPanel from './home/components/info-panel';
 import TabsPanel from './home/components/tabs-panel';
 import FilterPanel from './home/components/filter-panel';
 import MainImg from './components/main-img';
+import {defaultStyle} from '../src/common/styles/default';
 
 function Home() {
   return (
-    <ScrollView contentInsetAdjustmentBehavior="automatic">
+    <ScrollView
+      contentInsetAdjustmentBehavior="automatic"
+      style={defaultStyle.fon}>
       <MainImg
         url={require('../src/assets/img/fon-home.jpg')}
         changeShow={false}

@@ -21,7 +21,7 @@ const Compilation: FC<Props> = () => {
   return (
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
-      style={{backgroundColor: '#ffffff', paddingBottom: 40}}>
+      style={defaultStyle.fon}>
       <MainImg url={require('../src/assets/img/fon-home.jpg')} />
       <InfoBlock
         content="Элементы и&nbsp;функции платформы (развитие, ошибки и&nbsp;доработки)"

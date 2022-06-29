@@ -16,7 +16,7 @@ type Props = {};
 
 const CreateParentProperty: FC<Props> = props => {
   return (
-    <ScrollView>
+    <ScrollView style={defaultStyle.fon}>
       <View style={styles.container}>
         <InfoBlock
           content="Элементы и&nbsp;функции платформы (развитие, ошибки и&nbsp;доработки)"
@@ -27,28 +27,44 @@ const CreateParentProperty: FC<Props> = props => {
         <InputForm label="Название" placeholder="Ведите значение" />
         <SelectForm label="Тип свойства" placeholder="Выберите значение" />
         <View style={styles.rowInputs}>
-          <View>
-            <InputForm label="Минимум" placeholder="Ведите значение" />
+          <View style={styles.rowInputsItem}>
+            <InputForm
+              label="Минимум"
+              placeholder="Ведите значение"
+              customWrapStyle={{padding: 0}}
+            />
           </View>
-          <View>
-            <InputForm label="Максимум" placeholder="Ведите значение" />
+          <View style={styles.rowInputsItem}>
+            <InputForm
+              label="Максимум"
+              placeholder="Ведите значение"
+              customWrapStyle={{padding: 0}}
+            />
           </View>
         </View>
-        <View style={styles.rowInputs}>
-          <View>
-            <InputForm label="Шаг" placeholder="Ведите значение" />
+        <View style={[styles.rowInputs, {paddingTop: 20, paddingBottom: 20}]}>
+          <View style={styles.rowInputsItem}>
+            <InputForm
+              label="Шаг"
+              placeholder="Ведите значение"
+              customWrapStyle={{padding: 0}}
+            />
           </View>
-          <View>
+          <View style={styles.rowInputsItem}>
             <InputForm
               label="Еденицы измерения"
               placeholder="Ведите значение"
+              customWrapStyle={{padding: 0}}
             />
           </View>
         </View>
         <View style={defaultStyle.characteristics}>
           <View style={defaultStyle.characteristicsItem}>
             <Text
-              style={[defaultStyle.characteristicsLabel, {fontWeight: '700'}]}>
+              style={[
+                defaultStyle.characteristicsLabel,
+                {fontWeight: '700', fontSize: 16},
+              ]}>
               Фильтрация
             </Text>
             <View style={defaultStyle.characteristicsInput}>
@@ -57,7 +73,10 @@ const CreateParentProperty: FC<Props> = props => {
           </View>
           <View style={defaultStyle.characteristicsItem}>
             <Text
-              style={[defaultStyle.characteristicsLabel, {fontWeight: '700'}]}>
+              style={[
+                defaultStyle.characteristicsLabel,
+                {fontWeight: '700', fontSize: 16},
+              ]}>
               Скрыть у объекта
             </Text>
             <View style={defaultStyle.characteristicsInput}>
@@ -66,7 +85,10 @@ const CreateParentProperty: FC<Props> = props => {
           </View>
           <View style={defaultStyle.characteristicsItem}>
             <Text
-              style={[defaultStyle.characteristicsLabel, {fontWeight: '700'}]}>
+              style={[
+                defaultStyle.characteristicsLabel,
+                {fontWeight: '700', fontSize: 16},
+              ]}>
               Показывать в превью
             </Text>
             <View style={defaultStyle.characteristicsInput}>
@@ -74,7 +96,7 @@ const CreateParentProperty: FC<Props> = props => {
             </View>
           </View>
         </View>
-        <Text style={[defaultStyle.descriptionInput, {marginTop: 15}]}>
+        <Text style={[defaultStyle.descriptionInput, {marginTop: 45}]}>
           Группы свойства
         </Text>
         <ActiveParagraph
@@ -103,6 +125,12 @@ const styles = StyleSheet.create({
   rowInputs: {
     display: 'flex',
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingLeft: 20,
+    paddingRight: 20,
+  },
+  rowInputsItem: {
+    width: '47%',
   },
 });
 

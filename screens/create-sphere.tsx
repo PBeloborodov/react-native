@@ -13,7 +13,7 @@ type Props = {};
 
 const CreateSphere: FC<Props> = props => {
   return (
-    <ScrollView>
+    <ScrollView style={defaultStyle.fon}>
       <View style={styles.container}>
         <InfoBlock
           content="Элементы и&nbsp;функции платформы (развитие, ошибки и&nbsp;доработки)"

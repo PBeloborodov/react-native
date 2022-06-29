@@ -1,24 +1,10 @@
 import React from 'react';
-import {
-  ScrollView,
-  View,
-  Image,
-  Text,
-  StyleSheet,
-  Pressable,
-  TextInput,
-} from 'react-native';
-import Button from '../src/common/components/button';
-import {style} from '../src/common/styles/variables/style';
-import InfoPanel from './home/components/info-panel';
-import TabsPanel from './home/components/tabs-panel';
-import FilterPanel from './home/components/filter-panel';
+import {ScrollView, View, Text, StyleSheet, TextInput} from 'react-native';
 import MainImg from './components/main-img';
 import InfoBlock from './components/info-block';
 import ChildSphere from '../src/assets/img/icon/menu/child-sphere.svg';
 import {defaultStyle} from './../src/common/styles/default';
 import ActiveParagraph from './components/active-paragraph';
-import CheckBox from './home/components/checkbox';
 import Lock from '../src/assets/img/icon/lock.svg';
 import Public from '../src/assets/img/icon/public.svg';
 import Services from '../src/assets/img/icon/services.svg';
@@ -38,7 +24,7 @@ function Spheres() {
   return (
     <ScrollView
       contentInsetAdjustmentBehavior="automatic"
-      style={{backgroundColor: '#ffffff', paddingBottom: 40}}>
+      style={defaultStyle.fon}>
       <MainImg url={require('../src/assets/img/fon-home.jpg')} />
       <InfoBlock
         content="Элементы и&nbsp;функции платформы (развитие, ошибки и&nbsp;доработки)"

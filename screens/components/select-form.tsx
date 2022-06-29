@@ -37,6 +37,7 @@ const SelectForm: FC<Props> = ({label, placeholder, error = false}) => {
           },
         }}
         Icon={() => <ArrowDownGrey />}
+        useNativeAndroidPickerStyle={false}
         placeholder={placeholderSelect}
         items={[
           {label: 'valu1', value: 'valu1'},

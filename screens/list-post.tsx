@@ -10,10 +10,11 @@ import {
 import RowPost from './components/row-post';
 type Props = {};
 import {style} from '../src/common/styles/variables/style';
+import {defaultStyle} from '../src/common/styles/default';
 
 const ListPost: FC<Props> = props => {
   return (
-    <ScrollView>
+    <ScrollView style={defaultStyle.fon}>
       <View style={styles.listPost}>
         <RowPost />
         <RowPost />

@@ -7,6 +7,7 @@ type Props = {
   placeholder: string;
   error?: boolean;
   multiline?: boolean;
+  customWrapStyle?: any;
 };
 
 const InputForm: FC<Props> = ({
@@ -14,9 +15,10 @@ const InputForm: FC<Props> = ({
   placeholder,
   error = false,
   multiline = false,
+  customWrapStyle,
 }) => {
   return (
-    <View style={styles.wrapInput}>
+    <View style={[styles.wrapInput, customWrapStyle]}>
       <Text
         style={[
           styles.labelInput,
@@ -54,6 +56,7 @@ const styles = StyleSheet.create({
   input: {
     width: '100%',
     height: 40,
+    color: style.color.dustyGray,
   },
   inputError: {
     borderColor: style.color.redOrange,
