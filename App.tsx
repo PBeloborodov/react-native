@@ -15,6 +15,7 @@ import CreateParentProperty from './screens/create-parent-property';
 import AddMenu from './screens/add-menu';
 import Gellary from './screens/gellary';
 import ListVideo from './screens/list-video';
+import PanelVideo from './screens/panel-video';
 
 const Stack = createStackNavigator();
 
@@ -41,6 +42,7 @@ function MyStack() {
       <Stack.Screen name="AddMenu" component={AddMenu} />
       <Stack.Screen name="Gellary" component={Gellary} />
       <Stack.Screen name="ListVideo" component={ListVideo} />
+      <Stack.Screen name="PanelVideo" component={PanelVideo} />
     </Stack.Navigator>
   );
 }

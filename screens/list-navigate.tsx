@@ -38,6 +38,10 @@ const ListNavigate = ({navigation}) => {
         title="ListVideo"
         onPress={() => navigation.navigate('ListVideo')}
       />
+      <Button
+        title="PanelVideo"
+        onPress={() => navigation.navigate('PanelVideo')}
+      />
     </View>
   );
 };

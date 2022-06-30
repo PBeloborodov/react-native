@@ -4,6 +4,7 @@ export const style = {
     black: '#000000',
     white: '#FFF',
     blue: '#0078FF',
+    blueLight: '#EEF8FF',
     tundora: '#888888',
     gallery: '#EEEEEE',
     doveGray: '#707070',
