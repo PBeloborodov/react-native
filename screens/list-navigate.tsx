@@ -32,6 +32,7 @@ const ListNavigate = ({navigation}) => {
         title="CreateParentProperty"
         onPress={() => navigation.navigate('CreateParentProperty')}
       />
+      <Button title="AddMenu" onPress={() => navigation.navigate('AddMenu')} />
     </View>
   );
 };

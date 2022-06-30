@@ -12,6 +12,7 @@ import ListPost from './screens/list-post';
 import CreateSphere from './screens/create-sphere';
 import CreateSphereWithoutStatus from './screens/create-sphere-without-status';
 import CreateParentProperty from './screens/create-parent-property';
+import AddMenu from './screens/add-menu';
 
 const Stack = createStackNavigator();
 
@@ -35,6 +36,7 @@ function MyStack() {
         name="CreateParentProperty"
         component={CreateParentProperty}
       />
+      <Stack.Screen name="AddMenu" component={AddMenu} />
     </Stack.Navigator>
   );
 }

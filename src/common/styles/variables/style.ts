@@ -16,6 +16,7 @@ export const style = {
     zumthor: '#E8F1FF',
     redOrange: '#FF2626',
     alto: '#CECECE',
+    alabasterLight: '#FBFBFB',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
     },
