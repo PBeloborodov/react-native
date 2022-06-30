@@ -14,6 +14,7 @@ import CreateSphereWithoutStatus from './screens/create-sphere-without-status';
 import CreateParentProperty from './screens/create-parent-property';
 import AddMenu from './screens/add-menu';
 import Gellary from './screens/gellary';
+import ListVideo from './screens/list-video';
 
 const Stack = createStackNavigator();
 
@@ -39,6 +40,7 @@ function MyStack() {
       />
       <Stack.Screen name="AddMenu" component={AddMenu} />
       <Stack.Screen name="Gellary" component={Gellary} />
+      <Stack.Screen name="ListVideo" component={ListVideo} />
     </Stack.Navigator>
   );
 }

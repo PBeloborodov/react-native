@@ -34,6 +34,10 @@ const ListNavigate = ({navigation}) => {
       />
       <Button title="AddMenu" onPress={() => navigation.navigate('AddMenu')} />
       <Button title="Gellary" onPress={() => navigation.navigate('Gellary')} />
+      <Button
+        title="ListVideo"
+        onPress={() => navigation.navigate('ListVideo')}
+      />
     </View>
   );
 };
