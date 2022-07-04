@@ -7,6 +7,7 @@ export const style = {
     blueLight: '#EEF8FF',
     tundora: '#888888',
     gallery: '#EEEEEE',
+    galleryLight: '#EAEAEA',
     doveGray: '#707070',
     alabaster: '#F8F8F8',
     dustyGray: '#969696',
@@ -18,8 +19,11 @@ export const style = {
     redOrange: '#FF2626',
     alto: '#CECECE',
     alabasterLight: '#FBFBFB',
+    midnight: '#001C3D',
+    kashmirBlue: '#47678B',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
+      midnight: 'rgba(0, 28, 61, 0.5)',
     },
   },
   defaultText: {

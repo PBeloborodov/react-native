@@ -17,6 +17,7 @@ import Gellary from './screens/gellary';
 import ListVideo from './screens/list-video';
 import PanelVideo from './screens/panel-video';
 import PanelShortPanel from './screens/panel-short-video';
+import Favorites from './screens/favorites';
 
 const Stack = createStackNavigator();
 
@@ -45,6 +46,7 @@ function MyStack() {
       <Stack.Screen name="ListVideo" component={ListVideo} />
       <Stack.Screen name="PanelVideo" component={PanelVideo} />
       <Stack.Screen name="PanelShortPanel" component={PanelShortPanel} />
+      <Stack.Screen name="Favorites" component={Favorites} />
     </Stack.Navigator>
   );
 }

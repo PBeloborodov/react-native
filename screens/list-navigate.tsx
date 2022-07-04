@@ -46,6 +46,10 @@ const ListNavigate = ({navigation}) => {
         title="PanelShortPanel"
         onPress={() => navigation.navigate('PanelShortPanel')}
       />
+      <Button
+        title="Favorites"
+        onPress={() => navigation.navigate('Favorites')}
+      />
     </View>
   );
 };
