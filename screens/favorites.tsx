@@ -12,13 +12,14 @@ import {style} from '../src/common/styles/variables/style';
 import StarYellow from '../src/assets/img/icon/star-yellow.svg';
 type Props = {};
 
-const LIST_FAVORITES = [
+export const LIST_FAVORITES = [
   {
     source: require('../src/assets/img/favorites/image67.jpg'),
     name: 'Креветки AGAMA 35/45 камчатские варено-мороженые,',
     favoritesId: '1',
     rating: 4.5,
     counter: 45,
+    value: 0,
   },
   {
     source: require('../src/assets/img/favorites/image69.jpg'),
@@ -26,6 +27,7 @@ const LIST_FAVORITES = [
     favoritesId: '10',
     rating: 4.5,
     counter: 45,
+    value: 1,
   },
   {
     source: require('../src/assets/img/favorites/image13.jpg'),
@@ -33,6 +35,7 @@ const LIST_FAVORITES = [
     favoritesId: '11',
     rating: 4.5,
     counter: 45,
+    value: 2,
   },
 ];
 

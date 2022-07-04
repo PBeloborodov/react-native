@@ -50,6 +50,10 @@ const ListNavigate = ({navigation}) => {
         title="Favorites"
         onPress={() => navigation.navigate('Favorites')}
       />
+      <Button
+        title="SearchFavorites"
+        onPress={() => navigation.navigate('SearchFavorites')}
+      />
     </View>
   );
 };

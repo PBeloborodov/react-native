@@ -18,6 +18,7 @@ import ListVideo from './screens/list-video';
 import PanelVideo from './screens/panel-video';
 import PanelShortPanel from './screens/panel-short-video';
 import Favorites from './screens/favorites';
+import SearchFavorites from './screens/search-favorites';
 
 const Stack = createStackNavigator();
 
@@ -47,6 +48,7 @@ function MyStack() {
       <Stack.Screen name="PanelVideo" component={PanelVideo} />
       <Stack.Screen name="PanelShortPanel" component={PanelShortPanel} />
       <Stack.Screen name="Favorites" component={Favorites} />
+      <Stack.Screen name="SearchFavorites" component={SearchFavorites} />
     </Stack.Navigator>
   );
 }
