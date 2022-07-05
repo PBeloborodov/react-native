@@ -54,6 +54,10 @@ const ListNavigate = ({navigation}) => {
         title="SearchFavorites"
         onPress={() => navigation.navigate('SearchFavorites')}
       />
+      <Button
+        title="VisitHistory"
+        onPress={() => navigation.navigate('VisitHistory')}
+      />
     </View>
   );
 };
