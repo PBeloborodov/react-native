@@ -20,6 +20,7 @@ import PanelShortPanel from './screens/panel-short-video';
 import Favorites from './screens/favorites';
 import SearchFavorites from './screens/search-favorites';
 import VisitHistory from './screens/visit-history';
+import Notice from './screens/notice';
 
 const Stack = createStackNavigator();
 
@@ -51,6 +52,7 @@ function MyStack() {
       <Stack.Screen name="Favorites" component={Favorites} />
       <Stack.Screen name="SearchFavorites" component={SearchFavorites} />
       <Stack.Screen name="VisitHistory" component={VisitHistory} />
+      <Stack.Screen name="Notice" component={Notice} />
     </Stack.Navigator>
   );
 }

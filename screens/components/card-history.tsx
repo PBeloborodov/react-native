@@ -82,6 +82,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     fontSize: 12,
     color: style.color.tundora,
+    marginTop: 5,
   },
   cradHistoryCheck: {
     marginLeft: 10,

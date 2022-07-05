@@ -21,6 +21,8 @@ export const style = {
     alabasterLight: '#FBFBFB',
     midnight: '#001C3D',
     kashmirBlue: '#47678B',
+    malibu: '#7EBBFF',
+    wildSand: '#F5F5F5',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
       midnight: 'rgba(0, 28, 61, 0.5)',
