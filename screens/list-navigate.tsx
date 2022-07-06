@@ -59,6 +59,7 @@ const ListNavigate = ({navigation}) => {
         onPress={() => navigation.navigate('VisitHistory')}
       />
       <Button title="Notice" onPress={() => navigation.navigate('Notice')} />
+      <Button title="Inputs" onPress={() => navigation.navigate('Inputs')} />
     </View>
   );
 };

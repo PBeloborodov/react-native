@@ -1,12 +1,5 @@
 import React, {FC} from 'react';
-import {
-  Image,
-  StyleSheet,
-  View,
-  Text,
-  Dimensions,
-  Pressable,
-} from 'react-native';
+import {StyleSheet, View, Text, Dimensions, Pressable} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {style} from '../src/common/styles/variables/style';
 import NoiceItem from './components/noice-item';

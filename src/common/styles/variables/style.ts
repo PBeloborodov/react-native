@@ -23,6 +23,7 @@ export const style = {
     kashmirBlue: '#47678B',
     malibu: '#7EBBFF',
     wildSand: '#F5F5F5',
+    aliceBlue: '#F2F8FF',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
       midnight: 'rgba(0, 28, 61, 0.5)',

@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
   },
   filterBtn: {
     display: 'flex',
+    alignItems: 'flex-start',
     maxWidth: 112,
 
     borderRadius: 16,

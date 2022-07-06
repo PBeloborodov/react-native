@@ -5,7 +5,7 @@ import {style} from '../../src/common/styles/variables/style';
 import ArrowDownGrey from '../../src/assets/img/icon/arrow-down-grey.svg';
 import RNPickerSelect from 'react-native-picker-select';
 type Props = {
-  label: string;
+  label?: string;
   placeholder: string;
   error?: boolean;
 };
@@ -19,13 +19,15 @@ const SelectForm: FC<Props> = ({label, placeholder, error = false}) => {
   };
   return (
     <View style={styles.wrapInput}>
-      <Text
-        style={[
-          styles.labelInput,
-          error ? {color: style.color.redOrange} : {},
-        ]}>
-        {label}
-      </Text>
+      {label && (
+        <Text
+          style={[
+            styles.labelInput,
+            error ? {color: style.color.redOrange} : {},
+          ]}>
+          {label}
+        </Text>
+      )}
       <RNPickerSelect
         onValueChange={value => console.log(value)}
         style={{
