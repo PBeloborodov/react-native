@@ -1,9 +1,10 @@
 import React from 'react';
 import {Button, View} from 'react-native';
+import {ScrollView} from 'react-native-gesture-handler';
 
 const ListNavigate = ({navigation}) => {
   return (
-    <View>
+    <ScrollView style={{marginBottom: 20}}>
       <Button title="Home" onPress={() => navigation.navigate('Home')} />
       <Button title="Menu" onPress={() => navigation.navigate('Menu')} />
       <Button title="Spheres" onPress={() => navigation.navigate('Spheres')} />
@@ -60,7 +61,17 @@ const ListNavigate = ({navigation}) => {
       />
       <Button title="Notice" onPress={() => navigation.navigate('Notice')} />
       <Button title="Inputs" onPress={() => navigation.navigate('Inputs')} />
-    </View>
+      <Button title="Chats" onPress={() => navigation.navigate('Chats')} />
+      <Button title="NewChat" onPress={() => navigation.navigate('NewChat')} />
+      <Button
+        title="CreateChat"
+        onPress={() => navigation.navigate('CreateChat')}
+      />
+      <Button
+        title="Correspondence"
+        onPress={() => navigation.navigate('Correspondence')}
+      />
+    </ScrollView>
   );
 };
 export default ListNavigate;

@@ -22,6 +22,10 @@ import SearchFavorites from './screens/search-favorites';
 import VisitHistory from './screens/visit-history';
 import Notice from './screens/notice';
 import Inputs from './screens/inputs';
+import Chats from './screens/chat-pages/chats';
+import NewChat from './screens/chat-pages/new-chat';
+import CreateChat from './screens/chat-pages/create-chat';
+import Correspondence from './screens/chat-pages/correspondence';
 
 const Stack = createStackNavigator();
 
@@ -55,6 +59,10 @@ function MyStack() {
       <Stack.Screen name="VisitHistory" component={VisitHistory} />
       <Stack.Screen name="Notice" component={Notice} />
       <Stack.Screen name="Inputs" component={Inputs} />
+      <Stack.Screen name="Chats" component={Chats} />
+      <Stack.Screen name="NewChat" component={NewChat} />
+      <Stack.Screen name="CreateChat" component={CreateChat} />
+      <Stack.Screen name="Correspondence" component={Correspondence} />
     </Stack.Navigator>
   );
 }

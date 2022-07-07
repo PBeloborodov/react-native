@@ -4,6 +4,8 @@ export const style = {
     black: '#000000',
     white: '#FFF',
     blue: '#0078FF',
+    onaha: '#D0EEFF',
+    azureRadiance: '#0E80FF',
     blueLight: '#EEF8FF',
     tundora: '#888888',
     gallery: '#EEEEEE',
@@ -23,10 +25,13 @@ export const style = {
     kashmirBlue: '#47678B',
     malibu: '#7EBBFF',
     wildSand: '#F5F5F5',
+    cornflowerBlue: '#54A0F5',
     aliceBlue: '#F2F8FF',
+    doveGrayLight: '#727272',
     opacity: {
       black: 'rgba(0, 0, 0, 0.5)',
       midnight: 'rgba(0, 28, 61, 0.5)',
+      blue: 'rgba(0, 120, 255, 0.5)',
     },
   },
   defaultText: {

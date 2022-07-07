@@ -108,4 +108,10 @@ export const defaultStyle = StyleSheet.create({
     backgroundColor: style.color.white,
     paddingBottom: 40,
   },
+  text: {
+    fontFamily: 'Roboto-Regular',
+    fontSize: 14,
+    lineHeight: 16,
+    color: style.color.black,
+  },
 });

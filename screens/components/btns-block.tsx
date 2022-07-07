@@ -23,6 +23,7 @@ const BtnsBlock: FC<Props> = props => {
 };
 const styles = StyleSheet.create({
   wrapBtns: {
+    width: '100%',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',

@@ -12,6 +12,7 @@ import SearchIcon from '../src/assets/img/icon/search-icon.svg';
 import FilterIcon from '../src/assets/img/icon/filter-icon.svg';
 import {style} from '../src/common/styles/variables/style';
 import {LIST_FAVORITES} from './favorites';
+import SearchInput from './components/search-input';
 type Props = {};
 
 const SearchFavorites: FC<Props> = props => {
@@ -21,10 +22,7 @@ const SearchFavorites: FC<Props> = props => {
     <ScrollView
       style={{height: heightScreen, backgroundColor: style.color.white}}>
       <View style={styles.wrapSearch}>
-        <View style={styles.search}>
-          <SearchIcon />
-          <TextInput placeholder="Поиск" style={styles.searchInput} />
-        </View>
+        <SearchInput />
         <View style={styles.searchFilter}>
           <FilterIcon />
           <View style={styles.searchFilterCounter}>
@@ -61,24 +59,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 20,
     alignItems: 'center',
-  },
-  search: {
-    display: 'flex',
-    flex: 1,
-    flexDirection: 'row',
-    paddingBottom: 10,
-    paddingTop: 10,
-    paddingLeft: 10,
-    paddingRight: 10,
-    borderRadius: 4,
-    backgroundColor: style.color.alabaster,
-  },
-  searchInput: {
-    marginLeft: 10,
-    marginRight: 0,
-    marginBottom: 0,
-    marginTop: 0,
-    padding: 0,
   },
   searchFilter: {
     position: 'relative',
