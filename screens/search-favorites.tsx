@@ -75,6 +75,10 @@ const styles = StyleSheet.create({
   },
   searchInput: {
     marginLeft: 10,
+    marginRight: 0,
+    marginBottom: 0,
+    marginTop: 0,
+    padding: 0,
   },
   searchFilter: {
     position: 'relative',

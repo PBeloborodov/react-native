@@ -6,8 +6,10 @@ import {
   Image,
   Text,
   Dimensions,
+  TextInput,
 } from 'react-native';
 import EditIcon from '../src/assets/img/icon/edit-icon.svg';
+import Send from '../src/assets/img/icon/send.svg';
 import {style} from '../src/common/styles/variables/style';
 import RangeSlider from '../screens/components/range/range-slider';
 type Props = {};
@@ -31,20 +33,20 @@ const Inputs: FC<Props> = props => {
       </Pressable>
       <View style={styles.line} />
       <View style={styles.range}>
-        <View style={styles.rangeItem}>
+        <View style={styles.rangeItemLabel}>
           <Text style={{}}>Название</Text>
+          <Text style={{}}>4.5</Text>
         </View>
         <View style={{}}>
           <RangeSlider />
         </View>
       </View>
-      <View style={styles.range}>
-        <View style={styles.rangeItem}>
-          <Text style={{}}>Название</Text>
-        </View>
-        <View style={{}}>
-          <RangeSlider />
-        </View>
+      <View style={styles.line} />
+      <View style={styles.inputSendWrap}>
+        <TextInput placeholder="Аргумент" style={{padding: 0, margin: 0}} />
+        <Pressable>
+          <Send />
+        </Pressable>
       </View>
     </View>
   );
@@ -84,9 +86,32 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginRight: 20,
   },
-  range: {},
+  range: {
+    padding: 20,
+  },
   rangeItem: {
     marginBottom: 12,
+  },
+  rangeItemLabel: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 12,
+  },
+  inputSendWrap: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginLeft: 20,
+    marginRight: 20,
+    marginTop: 10,
+    marginBottom: 10,
+    backgroundColor: style.color.alabaster,
+    paddingLeft: 15,
+    paddingTop: 10,
+    paddingBottom: 10,
+    paddingRight: 8,
+    borderRadius: 4,
   },
 });
 

@@ -151,13 +151,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   filterBtnsWrap: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
     paddingTop: 16,
   },
   filterBtn: {
     display: 'flex',
     alignItems: 'flex-start',
-    maxWidth: 112,
-
     borderRadius: 16,
     paddingBottom: 3,
     paddingLeft: 16,
