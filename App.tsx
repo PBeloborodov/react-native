@@ -29,6 +29,7 @@ import Correspondence from './screens/chat-pages/correspondence';
 import CorrespondenceMedia from './screens/chat-pages/correspondence-media';
 import Profile from './screens/profile/index';
 import EditProfile from './screens/profile/edit-profile';
+import Frends from './screens/profile/frends';
 import {View, Text} from 'react-native';
 import HeaderChat from './screens/components/header-chat';
 
@@ -83,6 +84,7 @@ function MyStack() {
       />
       <Stack.Screen name="Profile" component={Profile} />
       <Stack.Screen name="EditProfile" component={EditProfile} />
+      <Stack.Screen name="Frends" component={Frends} />
     </Stack.Navigator>
   );
 }

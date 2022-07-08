@@ -5,6 +5,7 @@ export const style = {
     white: '#FFF',
     blue: '#0078FF',
     onaha: '#D0EEFF',
+    silverChaliceLight: '#AAAAAA',
     azureRadiance: '#0E80FF',
     blueLight: '#EEF8FF',
     tundora: '#888888',

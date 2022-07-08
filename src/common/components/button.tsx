@@ -61,5 +61,19 @@ const styles = StyleSheet.create({
   whiteBtnText: {
     color: style.color.blue,
   },
+  greyBtn: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: style.color.white,
+    width: 130,
+    height: 32,
+    borderColor: style.color.silverChaliceLight,
+    borderWidth: 1,
+    borderRadius: 4,
+  },
+  greyBtnText: {
+    color: style.color.grey,
+  },
 });
 export default Button;
