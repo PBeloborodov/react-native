@@ -39,7 +39,7 @@ const LIST_MESSAGES = [
 ];
 
 const Correspondence: FC<Props> = props => {
-  const heightScreen = Dimensions.get('window').height;
+  const heightScreen = Dimensions.get('window').height - 164;
 
   return (
     <View
@@ -47,7 +47,7 @@ const Correspondence: FC<Props> = props => {
         // height: heightScreen,
         backgroundColor: style.color.wildSand,
       }}>
-      <ScrollView style={[styles.messageFeed, {height: heightScreen - 168}]}>
+      <ScrollView style={[styles.messageFeed, {height: heightScreen}]}>
         {LIST_MESSAGES.map(item => {
           if (item.type === 'user') {
             return <MessageUser {...item} />;

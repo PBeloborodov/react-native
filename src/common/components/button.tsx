@@ -7,6 +7,7 @@ import {
   Pressable,
   StyleProp,
   ViewStyle,
+  TextStyle,
 } from 'react-native';
 import {style} from '../styles/variables/style';
 
@@ -14,6 +15,7 @@ type Props = {
   onClick: () => void;
   title: string;
   customStyleBtn?: StyleProp<ViewStyle>;
+  customStyleText?: StyleProp<TextStyle>;
   type?: string;
 };
 
@@ -22,11 +24,12 @@ const Button: FC<Props> = ({
   title,
   customStyleBtn = {},
   type = 'blue',
+  customStyleText,
 }) => {
   return (
     <Pressable onPress={onClick}>
       <View style={[styles[`${type}Btn`], customStyleBtn]}>
-        <Text style={styles[`${type}BtnText`]}>{title}</Text>
+        <Text style={[styles[`${type}BtnText`], customStyleText]}>{title}</Text>
       </View>
     </Pressable>
   );

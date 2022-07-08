@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   },
   gellaryItem: {
     position: 'relative',
-    width: 116,
+    width: '49%',
     height: 116,
     marginBottom: 4,
   },

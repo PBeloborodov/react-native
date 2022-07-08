@@ -75,6 +75,7 @@ const ListNavigate = ({navigation}) => {
         title="CorrespondenceMedia"
         onPress={() => navigation.navigate('CorrespondenceMedia')}
       />
+      <Button title="Profile" onPress={() => navigation.navigate('Profile')} />
     </ScrollView>
   );
 };
