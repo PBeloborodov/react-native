@@ -3,7 +3,7 @@ import {StyleSheet, View, Text, TextInput} from 'react-native';
 import {defaultStyle} from '../../src/common/styles/default';
 import {style} from '../../src/common/styles/variables/style';
 type Props = {
-  label: string;
+  label?: string;
   placeholder: string;
   error?: boolean;
   multiline?: boolean;
@@ -19,13 +19,16 @@ const InputForm: FC<Props> = ({
 }) => {
   return (
     <View style={[styles.wrapInput, customWrapStyle]}>
-      <Text
-        style={[
-          styles.labelInput,
-          error ? {color: style.color.redOrange} : {},
-        ]}>
-        {label}
-      </Text>
+      {label && (
+        <Text
+          style={[
+            styles.labelInput,
+            error ? {color: style.color.redOrange} : {},
+          ]}>
+          {label}
+        </Text>
+      )}
+
       <TextInput
         style={[
           defaultStyle.input,
