@@ -17,17 +17,29 @@ type Props = {};
 const LIST_MESSAGES = [
   {
     source: require('../../src/assets/img/chats/image21.jpg'),
-    text: 'Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная',
+    text: 'Изображения Текст зафиксированная на каком-либо материальном носителе человеческая мысль',
     date: '22.08.21',
     statusDelived: true,
     type: 'user',
+    gellary: [
+      require('../../src/assets/img/img-video/image67.jpg'),
+      require('../../src/assets/img/img-video/image67.jpg'),
+      require('../../src/assets/img/img-video/image67.jpg'),
+      require('../../src/assets/img/img-video/image67.jpg'),
+      require('../../src/assets/img/img-video/image67.jpg'),
+      require('../../src/assets/img/img-video/image67.jpg'),
+    ],
   },
   {
-    source: undefined,
-    text: 'Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная ',
+    source: require('../../src/assets/img/chats/image21.jpg'),
+    text: 'Видеозапись Текст зафиксированная на каком-либо материальном носителе человеческая мысль',
     date: '22.08.21',
     statusDelived: true,
-    type: 'your',
+    type: 'user',
+    video: {
+      screenShot: require('../../src/assets/img/img-video/image67.jpg'),
+      time: '04:30',
+    },
   },
   {
     source: require('../../src/assets/img/chats/image20.jpg'),
@@ -35,10 +47,16 @@ const LIST_MESSAGES = [
     date: '22.08.21',
     statusDelived: false,
     type: 'user',
+    quote: {
+      nameUser: 'Иван иванов',
+      iconUser: require('../../src/assets/img/chats/image20.jpg'),
+      screenShot: require('../../src/assets/img/img-video/image71.jpg'),
+      title: '15 фильмов, которые можно пересматривать бесконечно',
+    },
   },
 ];
 
-const Correspondence: FC<Props> = props => {
+const CorrespondenceMedia: FC<Props> = props => {
   const heightScreen = Dimensions.get('window').height;
 
   return (
@@ -111,4 +129,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Correspondence;
+export default CorrespondenceMedia;
