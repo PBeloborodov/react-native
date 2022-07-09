@@ -1,6 +1,7 @@
 import React, {FC} from 'react';
 import {StyleSheet, View, Image, Text} from 'react-native';
 import {style} from '../../src/common/styles/variables/style';
+import IconInfo from '../../src/assets/img/icon-info.svg';
 type Props = {};
 
 const HeaderChat: FC<Props> = props => {
@@ -14,6 +15,9 @@ const HeaderChat: FC<Props> = props => {
         <Text style={styles.headerChatName}>Мария Иванова</Text>
         <Text style={styles.headerChatStatus}>была в сети 22.08.21</Text>
       </View>
+      <View style={{paddingLeft: 120}}>
+        <IconInfo />
+      </View>
     </View>
   );
 };
@@ -25,7 +29,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingRight: 100,
+    // paddingRight: 100,
     // paddingBottom: 20,
   },
   headerChatImg: {},
