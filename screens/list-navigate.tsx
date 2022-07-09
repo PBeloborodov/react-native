@@ -81,6 +81,7 @@ const ListNavigate = ({navigation}) => {
         onPress={() => navigation.navigate('EditProfile')}
       />
       <Button title="Frends" onPress={() => navigation.navigate('Frends')} />
+      <Button title="Balance" onPress={() => navigation.navigate('Balance')} />
     </ScrollView>
   );
 };

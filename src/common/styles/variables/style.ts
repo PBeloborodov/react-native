@@ -1,6 +1,7 @@
 export const style = {
   color: {
     grey: '#444444',
+    green: '#038336',
     black: '#000000',
     white: '#FFF',
     blue: '#0078FF',
