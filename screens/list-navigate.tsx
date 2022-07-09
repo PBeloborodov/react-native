@@ -82,6 +82,10 @@ const ListNavigate = ({navigation}) => {
       />
       <Button title="Frends" onPress={() => navigation.navigate('Frends')} />
       <Button title="Balance" onPress={() => navigation.navigate('Balance')} />
+      <Button
+        title="InfoCard"
+        onPress={() => navigation.navigate('InfoCard')}
+      />
     </ScrollView>
   );
 };
