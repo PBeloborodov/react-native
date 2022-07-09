@@ -30,25 +30,37 @@ const EditProfile: FC<Props> = props => {
         <View style={styles.infoUserItem}>
           <Text style={styles.infoUserLabel}>Имя</Text>
           <View style={styles.infoUserInputWrap}>
-            <TextInput placeholder="Введите значение" />
+            <TextInput
+              placeholder="Введите значение"
+              style={{padding: 0, margin: 0, color: style.color.dustyGray}}
+            />
           </View>
         </View>
         <View style={styles.infoUserItem}>
           <Text style={styles.infoUserLabel}>Фамилия</Text>
           <View style={styles.infoUserInputWrap}>
-            <TextInput placeholder="Введите значение" />
+            <TextInput
+              placeholder="Введите значение"
+              style={{padding: 0, margin: 0, color: style.color.dustyGray}}
+            />
           </View>
         </View>
         <View style={styles.infoUserItem}>
           <Text style={styles.infoUserLabel}>Телефон</Text>
           <View style={styles.infoUserInputWrap}>
-            <TextInput placeholder="Введите значение" />
+            <TextInput
+              placeholder="Введите значение"
+              style={{padding: 0, margin: 0, color: style.color.dustyGray}}
+            />
           </View>
         </View>
         <View style={[styles.infoUserItem, {marginBottom: 0}]}>
           <Text style={styles.infoUserLabel}>Email</Text>
           <View style={styles.infoUserInputWrap}>
-            <TextInput placeholder="Введите значение" />
+            <TextInput
+              placeholder="Введите значение"
+              style={{padding: 0, margin: 0, color: style.color.dustyGray}}
+            />
           </View>
         </View>
       </View>
@@ -63,7 +75,7 @@ const EditProfile: FC<Props> = props => {
             <TextInput
               placeholder="Введите значение"
               value="Россия"
-              style={{color: style.color.blue}}
+              style={{padding: 0, margin: 0, color: style.color.blue}}
             />
           </View>
         </View>
@@ -73,7 +85,7 @@ const EditProfile: FC<Props> = props => {
             <TextInput
               placeholder="Введите значение"
               value="Москва"
-              style={{color: style.color.blue}}
+              style={{color: style.color.blue, padding: 0, margin: 0}}
             />
           </View>
         </View>
@@ -82,7 +94,7 @@ const EditProfile: FC<Props> = props => {
           <View style={styles.contactItemInput}>
             <TextInput
               placeholder="Введите телефон"
-              style={{color: style.color.blue}}
+              style={{color: style.color.blue, padding: 0, margin: 0}}
             />
           </View>
         </View>
@@ -91,7 +103,7 @@ const EditProfile: FC<Props> = props => {
           <View style={styles.contactItemInput}>
             <TextInput
               placeholder="Введите адрес"
-              style={{color: style.color.blue}}
+              style={{color: style.color.blue, padding: 0, margin: 0}}
             />
           </View>
         </View>

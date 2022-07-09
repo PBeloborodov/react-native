@@ -17,13 +17,15 @@ import UserIcon from '../../src/assets/img/icon/user-icon.svg';
 import Star from '../../src/assets/img/icon/star.svg';
 import IconSphere from '../../src/assets/img/icon/icon-sphere.svg';
 import CounterBlue from '../components/counter-blue';
+import {ScrollView} from 'react-native-gesture-handler';
 type Props = {};
 
 const Profile: FC<Props> = props => {
   const heightScreen = Dimensions.get('window').height + 100;
 
   return (
-    <View style={{backgroundColor: style.color.white, height: heightScreen}}>
+    <ScrollView
+      style={{backgroundColor: style.color.white, height: heightScreen}}>
       <View style={styles.mainInfo}>
         <View style={styles.mainInfoWrapImg}>
           <Image
@@ -116,7 +118,7 @@ const Profile: FC<Props> = props => {
           <Text style={styles.filterItemText}>Статьи</Text>
         </Pressable>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

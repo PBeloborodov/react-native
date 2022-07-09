@@ -28,7 +28,7 @@ type Props = {};
 
 const NewChat: FC<Props> = props => {
   return (
-    <View style={[styles.container, {backgroundColor: 'white'}]}>
+    <ScrollView style={[styles.container, {backgroundColor: 'white'}]}>
       <View style={styles.filter}>
         <Pressable style={styles.filterItem}>
           <Text style={styles.filterItemText}>Все</Text>
@@ -57,7 +57,7 @@ const NewChat: FC<Props> = props => {
         </ScrollView>
       </View>
       <BtnsBlock />
-    </View>
+    </ScrollView>
   );
 };
 

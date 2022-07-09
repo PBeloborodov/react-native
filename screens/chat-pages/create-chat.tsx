@@ -29,7 +29,7 @@ const CreateChat: FC<Props> = props => {
   const heightScreen = Dimensions.get('window').height + 100;
 
   return (
-    <View
+    <ScrollView
       style={[
         styles.container,
         {height: heightScreen, backgroundColor: 'white'},
@@ -54,7 +54,7 @@ const CreateChat: FC<Props> = props => {
       <Pressable style={styles.btn}>
         <Text style={[defaultStyle.text, styles.btnText]}>Создать чат</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 };
 

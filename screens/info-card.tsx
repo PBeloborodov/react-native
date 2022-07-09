@@ -7,7 +7,7 @@ import {
   Pressable,
   Image,
 } from 'react-native';
-import {TextInput} from 'react-native-gesture-handler';
+import {ScrollView, TextInput} from 'react-native-gesture-handler';
 import Button from '../src/common/components/button';
 import {style} from '../src/common/styles/variables/style';
 import InputForm from './components/input-form';
@@ -17,7 +17,7 @@ const InfoCard: FC<Props> = props => {
   const heightScreen = Dimensions.get('window').height + 100;
 
   return (
-    <View style={[styles.card, {height: heightScreen}]}>
+    <ScrollView style={[styles.card, {height: heightScreen}]}>
       <Text style={styles.cardTitle}>Привязка банковской карты</Text>
       <View style={styles.cardInfo}>
         <View style={styles.cardInfoItem}>
@@ -65,7 +65,7 @@ const InfoCard: FC<Props> = props => {
       <View style={{paddingLeft: 10}}>
         <Image source={require('../src/assets/img/logo-card.png')} />
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -100,7 +100,11 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginBottom: 8,
   },
-  cardInfoInput: {},
+  cardInfoInput: {
+    padding: 0,
+    margin: 0,
+    color: style.color.dustyGray,
+  },
   cardInfoRow: {
     display: 'flex',
     flexDirection: 'row',

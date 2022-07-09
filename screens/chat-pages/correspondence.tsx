@@ -42,7 +42,7 @@ const Correspondence: FC<Props> = props => {
   const heightScreen = Dimensions.get('window').height - 164;
 
   return (
-    <View
+    <ScrollView
       style={{
         // height: heightScreen,
         backgroundColor: style.color.wildSand,
@@ -67,7 +67,7 @@ const Correspondence: FC<Props> = props => {
           </Pressable>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

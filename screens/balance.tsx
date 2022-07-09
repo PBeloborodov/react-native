@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, ScrollView} from 'react-native';
 import {defaultStyle} from '../src/common/styles/default';
 import Grafic from '../src/assets/img/icon/grafic.svg';
 import Sorting from '../src/assets/img/icon/sorting.svg';
@@ -58,7 +58,7 @@ const LIST_BAY = {
 
 const Balance: FC<Props> = props => {
   return (
-    <View>
+    <ScrollView>
       <View style={styles.balanceWrap}>
         <View style={styles.balanceInfo}>
           <Text style={styles.balanceInfoTitle}>ОБЩИЙ БАЛАНС</Text>
@@ -107,7 +107,7 @@ const Balance: FC<Props> = props => {
       </View>
       <DetailBalance {...USER_ADD} />
       <DetailBalance {...LIST_BAY} />
-    </View>
+    </ScrollView>
   );
 };
 
