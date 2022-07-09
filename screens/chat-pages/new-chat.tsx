@@ -27,36 +27,45 @@ const LIST_USER = [
 type Props = {};
 
 const NewChat: FC<Props> = props => {
+  const heightScreen = Dimensions.get('window').height - 94;
+
   return (
-    <ScrollView style={[styles.container, {backgroundColor: 'white'}]}>
-      <View style={styles.filter}>
-        <Pressable style={styles.filterItem}>
-          <Text style={styles.filterItemText}>Все</Text>
-        </Pressable>
-        <Pressable style={styles.filterItem}>
-          <Text style={styles.filterItemText}>Друзья</Text>
-          <View style={styles.filterLine} />
-        </Pressable>
-        <Pressable style={styles.filterItem}>
-          <Text style={styles.filterItemText}>Подписки</Text>
-        </Pressable>
-        <Pressable style={styles.filterItem}>
-          <Text style={styles.filterItemText}>
-            Выбранные <Text style={{color: style.color.opacity.blue}}>1 </Text>
-          </Text>
-        </Pressable>
+    <ScrollView>
+      <View
+        style={[
+          styles.container,
+          {backgroundColor: 'white', height: heightScreen},
+        ]}>
+        <View style={styles.filter}>
+          <Pressable style={styles.filterItem}>
+            <Text style={styles.filterItemText}>Все</Text>
+          </Pressable>
+          <Pressable style={styles.filterItem}>
+            <Text style={styles.filterItemText}>Друзья</Text>
+            <View style={styles.filterLine} />
+          </Pressable>
+          <Pressable style={styles.filterItem}>
+            <Text style={styles.filterItemText}>Подписки</Text>
+          </Pressable>
+          <Pressable style={styles.filterItem}>
+            <Text style={styles.filterItemText}>
+              Выбранные{' '}
+              <Text style={{color: style.color.opacity.blue}}>1 </Text>
+            </Text>
+          </Pressable>
+        </View>
+        <View style={styles.wrapSearch}>
+          <SearchInput />
+        </View>
+        <View style={{height: '100%'}}>
+          <ScrollView style={styles.listUser}>
+            {LIST_USER.map(user => (
+              <UserItem {...user} />
+            ))}
+          </ScrollView>
+        </View>
+        <BtnsBlock />
       </View>
-      <View style={styles.wrapSearch}>
-        <SearchInput />
-      </View>
-      <View style={{height: '100%'}}>
-        <ScrollView style={styles.listUser}>
-          {LIST_USER.map(user => (
-            <UserItem {...user} />
-          ))}
-        </ScrollView>
-      </View>
-      <BtnsBlock />
     </ScrollView>
   );
 };

@@ -43,7 +43,10 @@ const Inputs: FC<Props> = props => {
       </View>
       <View style={styles.line} />
       <View style={styles.inputSendWrap}>
-        <TextInput placeholder="Аргумент" style={{padding: 0, margin: 0}} />
+        <TextInput
+          placeholder="Аргумент"
+          style={{padding: 0, margin: 0, color: style.color.tundora}}
+        />
         <Pressable>
           <Send />
         </Pressable>

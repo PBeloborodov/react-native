@@ -23,7 +23,9 @@ const styles = StyleSheet.create({
     display: 'flex',
     width: '100%',
     flexDirection: 'row',
+    alignItems: 'center',
     paddingRight: 100,
+    paddingBottom: 20,
   },
   headerChatImg: {},
   headerChatContent: {
@@ -38,7 +40,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Roboto-Regular',
     color: style.color.doveGrayAdd,
-    paddingBottom: 20,
   },
 });
 

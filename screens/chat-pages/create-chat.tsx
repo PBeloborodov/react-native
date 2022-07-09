@@ -26,34 +26,36 @@ const LIST_USER = [
 type Props = {};
 
 const CreateChat: FC<Props> = props => {
-  const heightScreen = Dimensions.get('window').height + 100;
+  const heightScreen = Dimensions.get('window').height - 94;
 
   return (
-    <ScrollView
-      style={[
-        styles.container,
-        {height: heightScreen, backgroundColor: 'white'},
-      ]}>
-      <View style={styles.addPhoto}>
-        <UploadPhoto />
-        <View style={styles.addPhotoWrapBtn}>
-          <TextInput
-            placeholder={'Название чата'}
-            style={[defaultStyle.text, styles.addPhotoInput]}
-          />
+    <ScrollView>
+      <View
+        style={[
+          styles.container,
+          {height: heightScreen, backgroundColor: 'white'},
+        ]}>
+        <View style={styles.addPhoto}>
+          <UploadPhoto />
+          <View style={styles.addPhotoWrapBtn}>
+            <TextInput
+              placeholder={'Название чата'}
+              style={[defaultStyle.text, styles.addPhotoInput]}
+            />
+          </View>
         </View>
+        <Text style={[defaultStyle.text, styles.label]}>Участники</Text>
+        <View style={{height: '68%'}}>
+          <ScrollView style={styles.listUser}>
+            {LIST_USER.map(user => (
+              <UserItem {...user} />
+            ))}
+          </ScrollView>
+        </View>
+        <Pressable style={styles.btn}>
+          <Text style={[defaultStyle.text, styles.btnText]}>Создать чат</Text>
+        </Pressable>
       </View>
-      <Text style={[defaultStyle.text, styles.label]}>Участники</Text>
-      <View style={{height: '68%'}}>
-        <ScrollView style={styles.listUser}>
-          {LIST_USER.map(user => (
-            <UserItem {...user} />
-          ))}
-        </ScrollView>
-      </View>
-      <Pressable style={styles.btn}>
-        <Text style={[defaultStyle.text, styles.btnText]}>Создать чат</Text>
-      </Pressable>
     </ScrollView>
   );
 };
@@ -62,7 +64,7 @@ const styles = StyleSheet.create({
   container: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'flex-start',
+    // justifyContent: 'flex-start',
   },
   addPhoto: {
     display: 'flex',

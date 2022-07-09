@@ -112,6 +112,6 @@ export const defaultStyle = StyleSheet.create({
     fontFamily: 'Roboto-Regular',
     fontSize: 14,
     lineHeight: 16,
-    color: style.color.black,
+    color: style.color.tundora,
   },
 });
