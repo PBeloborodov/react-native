@@ -86,6 +86,14 @@ const ListNavigate = ({navigation}) => {
         title="InfoCard"
         onPress={() => navigation.navigate('InfoCard')}
       />
+      <Button
+        title="PostsSlider"
+        onPress={() => navigation.navigate('PostsSlider')}
+      />
+      <Button
+        title="PageRating"
+        onPress={() => navigation.navigate('PageRating')}
+      />
     </ScrollView>
   );
 };

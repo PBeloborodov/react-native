@@ -32,6 +32,8 @@ import EditProfile from './screens/profile/edit-profile';
 import Frends from './screens/profile/frends';
 import Balance from './screens/balance';
 import InfoCard from './screens/info-card';
+import PostsSlider from './screens/posts-slider/index';
+import PageRating from './screens/ratings-page/index';
 import {View, Text} from 'react-native';
 import HeaderChat from './screens/components/header-chat';
 
@@ -89,6 +91,8 @@ function MyStack() {
       <Stack.Screen name="Frends" component={Frends} />
       <Stack.Screen name="Balance" component={Balance} />
       <Stack.Screen name="InfoCard" component={InfoCard} />
+      <Stack.Screen name="PostsSlider" component={PostsSlider} />
+      <Stack.Screen name="PageRating" component={PageRating} />
     </Stack.Navigator>
   );
 }
