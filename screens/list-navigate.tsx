@@ -94,6 +94,7 @@ const ListNavigate = ({navigation}) => {
         title="PageRating"
         onPress={() => navigation.navigate('PageRating')}
       />
+      <Button title="Awards" onPress={() => navigation.navigate('Awards')} />
     </ScrollView>
   );
 };

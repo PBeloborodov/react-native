@@ -34,6 +34,7 @@ import Balance from './screens/balance';
 import InfoCard from './screens/info-card';
 import PostsSlider from './screens/posts-slider/index';
 import PageRating from './screens/ratings-page/index';
+import Awards from './screens/awards/index';
 import {View, Text} from 'react-native';
 import HeaderChat from './screens/components/header-chat';
 
@@ -93,6 +94,7 @@ function MyStack() {
       <Stack.Screen name="InfoCard" component={InfoCard} />
       <Stack.Screen name="PostsSlider" component={PostsSlider} />
       <Stack.Screen name="PageRating" component={PageRating} />
+      <Stack.Screen name="Awards" component={Awards} />
     </Stack.Navigator>
   );
 }
