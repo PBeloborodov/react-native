@@ -45,7 +45,7 @@ const Awards: FC<Props> = props => {
           </View>
         </View>
         <View style={styles.descriptionAwards}>
-          <View style={styles.descriptionAwardsRow}>
+          <View style={[styles.descriptionAwardsRow]}>
             <Text style={styles.descriptionAwardsNumber}>№</Text>
             <Text style={styles.descriptionAwardsValue}>1</Text>
             <Pressable>
@@ -93,7 +93,11 @@ const Awards: FC<Props> = props => {
           <Text style={styles.descriptionAwardsBreadCrumbs}>
             Сегмент 1 / Сегмент 2 / Сегмент 3
           </Text>
-          <View style={styles.descriptionAwardsRow}>
+          <View
+            style={[
+              styles.descriptionAwardsRow,
+              styles.descriptionAwardsRowBorder,
+            ]}>
             <Text style={styles.descriptionAwardsNumber}>№</Text>
             <Text style={styles.descriptionAwardsValue}>6</Text>
             <Pressable>
@@ -102,8 +106,14 @@ const Awards: FC<Props> = props => {
               </View>
             </Pressable>
           </View>
-          <Text style={styles.descriptionAwardsBreadCrumbs}>Сегмент 1</Text>
-          <View style={styles.descriptionAwardsRow}>
+          <Text style={[styles.descriptionAwardsBreadCrumbs, {paddingTop: 8}]}>
+            Сегмент 1
+          </Text>
+          <View
+            style={[
+              styles.descriptionAwardsRow,
+              styles.descriptionAwardsRowBorder,
+            ]}>
             <Text style={styles.descriptionAwardsNumber}>№</Text>
             <Text style={styles.descriptionAwardsValue}>7</Text>
             <Pressable>
@@ -112,7 +122,7 @@ const Awards: FC<Props> = props => {
               </View>
             </Pressable>
           </View>
-          <Text style={styles.descriptionAwardsBreadCrumbs}>
+          <Text style={[styles.descriptionAwardsBreadCrumbs, {paddingTop: 8}]}>
             Сегмент 1 / Сегмент 2
           </Text>
           <View style={[styles.descriptionAwardsRow, {marginBottom: 0}]}>
@@ -167,7 +177,12 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'flex-end',
-    marginBottom: 12,
+    paddingBottom: 12,
+  },
+  descriptionAwardsRowBorder: {
+    borderBottomColor: style.color.grey,
+    borderBottomWidth: 1,
+    paddingBottom: 8,
   },
   descriptionAwardsBreadCrumbs: {
     fontFamily: 'Roboto-Regular',
