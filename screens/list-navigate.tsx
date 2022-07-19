@@ -95,6 +95,14 @@ const ListNavigate = ({navigation}) => {
         onPress={() => navigation.navigate('PageRating')}
       />
       <Button title="Awards" onPress={() => navigation.navigate('Awards')} />
+      <Button
+        title="ListAudio"
+        onPress={() => navigation.navigate('ListAudio')}
+      />
+      <Button
+        title="ListFiles"
+        onPress={() => navigation.navigate('ListFiles')}
+      />
     </ScrollView>
   );
 };

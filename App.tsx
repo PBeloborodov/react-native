@@ -35,6 +35,8 @@ import InfoCard from './screens/info-card';
 import PostsSlider from './screens/posts-slider/index';
 import PageRating from './screens/ratings-page/index';
 import Awards from './screens/awards/index';
+import ListAudio from './screens/list-audio/index';
+import ListFiles from './screens/list-files/index';
 import {View, Text} from 'react-native';
 import HeaderChat from './screens/components/header-chat';
 
@@ -95,6 +97,8 @@ function MyStack() {
       <Stack.Screen name="PostsSlider" component={PostsSlider} />
       <Stack.Screen name="PageRating" component={PageRating} />
       <Stack.Screen name="Awards" component={Awards} />
+      <Stack.Screen name="ListAudio" component={ListAudio} />
+      <Stack.Screen name="ListFiles" component={ListFiles} />
     </Stack.Navigator>
   );
 }

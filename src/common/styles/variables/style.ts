@@ -13,6 +13,7 @@ export const style = {
     malibuLight: '#6FC2F1',
     malibuLightShow: '#E8F3FF',
     PattensBlue: '#DBF0FF',
+    bluePlayer: '#B4D8FF',
     bluePattensFon: '#D4E8FF',
     onaha: '#D0EEFF',
     silverChaliceLight: '#AAAAAA',
