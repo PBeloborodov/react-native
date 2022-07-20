@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingTop: 8,
     paddingBottom: 8,
-    borderColor: style.color.blue,
+    borderColor: style.color.malibu,
     borderWidth: 1,
     backgroundColor: style.color.white,
     borderRadius: 4,

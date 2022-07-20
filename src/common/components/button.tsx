@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
   blueBtnText: {
+    fontFamily: 'Roboto-regular',
     color: style.color.white,
   },
   whiteBtn: {
