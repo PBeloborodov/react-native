@@ -40,6 +40,8 @@ import ListFiles from './screens/list-files/index';
 import ResultBatl from './screens/result-batl/index';
 import SaveBatl from './screens/save-batl/index';
 import ListBatl from './screens/list-batl/index';
+import SliderElem from './screens/slider-elem/index';
+import AddPage from './screens/page-add/index';
 import {View, Text} from 'react-native';
 import HeaderChat from './screens/components/header-chat';
 
@@ -105,6 +107,8 @@ function MyStack() {
       <Stack.Screen name="ResultBatl" component={ResultBatl} />
       <Stack.Screen name="SaveBatl" component={SaveBatl} />
       <Stack.Screen name="ListBatl" component={ListBatl} />
+      <Stack.Screen name="SliderElem" component={SliderElem} />
+      <Stack.Screen name="AddPage" component={AddPage} />
     </Stack.Navigator>
   );
 }

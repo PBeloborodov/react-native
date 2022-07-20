@@ -115,6 +115,11 @@ const ListNavigate = ({navigation}) => {
         title="ListBatl"
         onPress={() => navigation.navigate('ListBatl')}
       />
+      <Button
+        title="SliderElem"
+        onPress={() => navigation.navigate('SliderElem')}
+      />
+      <Button title="AddPage" onPress={() => navigation.navigate('AddPage')} />
     </ScrollView>
   );
 };

@@ -15,6 +15,7 @@ export const style = {
     malibuLightShow: '#E8F3FF',
     PattensBlue: '#DBF0FF',
     bluePlayer: '#B4D8FF',
+    blueBorder: '#BFDDFF',
     bluePattensFon: '#D4E8FF',
     onaha: '#D0EEFF',
     silverChaliceLight: '#AAAAAA',
