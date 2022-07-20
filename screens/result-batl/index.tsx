@@ -13,6 +13,7 @@ import {style} from '../../src/common/styles/variables/style';
 import Swords from '../../src/assets/img/icon/swords.svg';
 import Rating from '../components/common/rating';
 import OpinionLine from './opinion-line';
+import CardBatl from '../components/crad-batl';
 type Props = {};
 
 const ResultBatl: FC<Props> = props => {
@@ -44,44 +45,19 @@ const ResultBatl: FC<Props> = props => {
           </View>
         </View>
         <View style={styles.wrapCards}>
-          <View style={styles.card}>
-            <View style={styles.cardPlace}>
-              <Text style={styles.cardPlaceText}>1</Text>
-            </View>
-            <Image
-              source={require('../../src/assets/img/img-video/image72.jpg')}
-              resizeMode="cover"
-              style={styles.cardImg}
-            />
-            <Text style={[defaultStyle.text, styles.cardName]}>
-              Креветки AGAMA 35/45 камчатские варено-мороженые,
-            </Text>
-            <Pressable style={{width: '100%'}}>
-              <View style={styles.cardBtn}>
-                <Text style={styles.cardBtnText}>Выбрать</Text>
-              </View>
-            </Pressable>
-          </View>
-          <View style={[styles.card, {marginTop: 50}]}>
-            <View style={[styles.cardPlace, styles.cardPlaceTwo]}>
-              <Text style={[styles.cardPlaceText, styles.cardPlaceTwoText]}>
-                2
-              </Text>
-            </View>
-            <Image
-              source={require('../../src/assets/img/img-video/image72.jpg')}
-              resizeMode="cover"
-              style={styles.cardImg}
-            />
-            <Text style={[defaultStyle.text, styles.cardName]}>
-              Креветки AGAMA 35/45 камчатские варено-мороженые,
-            </Text>
-            <Pressable style={{width: '100%'}}>
-              <View style={styles.cardBtn}>
-                <Text style={styles.cardBtnText}>Выбрать</Text>
-              </View>
-            </Pressable>
-          </View>
+          <CardBatl
+            imgSrc={require('../../src/assets/img/img-video/image72.jpg')}
+            label={'Креветки AGAMA 35/45 камчатские варено-мороженые,'}
+            place={1}
+            showBtn
+          />
+          <CardBatl
+            imgSrc={require('../../src/assets/img/img-video/image72.jpg')}
+            label={'Креветки AGAMA 35/45 камчатские варено-мороженые,'}
+            place={2}
+            placeTwo
+            showBtn
+          />
           <View style={styles.iconBatl}>
             <Swords />
           </View>

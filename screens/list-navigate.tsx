@@ -111,6 +111,10 @@ const ListNavigate = ({navigation}) => {
         title="SaveBatl"
         onPress={() => navigation.navigate('SaveBatl')}
       />
+      <Button
+        title="ListBatl"
+        onPress={() => navigation.navigate('ListBatl')}
+      />
     </ScrollView>
   );
 };
