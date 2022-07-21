@@ -15,6 +15,7 @@ import CrossSlide from '../../src/assets/img/icon/cross-slide.svg';
 import Swiper from 'react-native-web-swiper';
 import {defaultStyle} from '../../src/common/styles/default';
 import {style} from '../../src/common/styles/variables/style';
+import Slide from './slide';
 type Props = {};
 
 const SliderElem: FC<Props> = props => {
@@ -60,101 +61,10 @@ const SliderElem: FC<Props> = props => {
         style={[styles.horizontal]}
         horizontal
         contentOffset={{x: 250, y: 0}}>
-        <Pressable>
-          <View style={styles.horizontalItem}>
-            <Image
-              source={require('../../src/assets/img/img-video/image72.jpg')}
-              resizeMode={'cover'}
-              style={{
-                height: 288,
-                width: 288,
-              }}
-            />
-            <Pressable style={styles.btnCross}>
-              <Cross />
-            </Pressable>
-            <View style={styles.horizontalItemName}>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                Название
-              </Text>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                1/3
-              </Text>
-            </View>
-          </View>
-        </Pressable>
-
-        <Pressable>
-          <View style={styles.horizontalItem}>
-            <Image
-              source={require('../../src/assets/img/img-video/image72.jpg')}
-              resizeMode={'cover'}
-              style={{
-                height: 288,
-                width: 288,
-              }}
-            />
-            <Pressable style={styles.btnCross}>
-              <Cross />
-            </Pressable>
-            <View style={styles.horizontalItemName}>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                Название
-              </Text>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                1/3
-              </Text>
-            </View>
-          </View>
-        </Pressable>
-
-        <Pressable>
-          <View style={styles.horizontalItem}>
-            <Image
-              source={require('../../src/assets/img/img-video/image72.jpg')}
-              resizeMode={'cover'}
-              style={{
-                height: 288,
-                width: 288,
-              }}
-            />
-            <Pressable style={styles.btnCross}>
-              <Cross />
-            </Pressable>
-            <View style={styles.horizontalItemName}>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                Название
-              </Text>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                1/3
-              </Text>
-            </View>
-          </View>
-        </Pressable>
-
-        <Pressable>
-          <View style={styles.horizontalItem}>
-            <Image
-              source={require('../../src/assets/img/img-video/image72.jpg')}
-              resizeMode={'cover'}
-              style={{
-                height: 288,
-                width: 288,
-              }}
-            />
-            <Pressable style={styles.btnCross}>
-              <Cross />
-            </Pressable>
-            <View style={styles.horizontalItemName}>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                Название
-              </Text>
-              <Text style={[defaultStyle.text, {color: style.color.white}]}>
-                1/3
-              </Text>
-            </View>
-          </View>
-        </Pressable>
+        <Slide />
+        <Slide />
+        <Slide />
+        <Slide />
       </ScrollView>
     </ScrollView>
   );
