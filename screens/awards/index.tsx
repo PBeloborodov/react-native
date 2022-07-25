@@ -1,4 +1,3 @@
-import {BaseNavigationContainer} from '@react-navigation/native';
 import React, {FC} from 'react';
 import {Pressable, ScrollView} from 'react-native';
 import {StyleSheet, View, Text, Image} from 'react-native';
